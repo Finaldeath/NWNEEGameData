@@ -1,0 +1,18 @@
+//::///////////////////////////////////////////////
+//:: FileName ddf_sc_per_med
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: Script Wizard
+//:: Created On: 2018-10-19 9:13:44 PM
+//:://////////////////////////////////////////////
+#include "nw_i0_tool"
+
+int StartingConditional()
+{
+
+    // Perform skill checks
+    if(!(AutoDC(DC_MEDIUM, SKILL_BLUFF, GetPCSpeaker())))
+        return FALSE;
+
+    return TRUE;
+}

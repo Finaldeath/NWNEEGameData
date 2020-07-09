@@ -1,0 +1,18 @@
+//::///////////////////////////////////////////////
+//:: cac_a2_sweet_d1
+//:: Copyright (c) 2001 Bioware Corp.
+//:://////////////////////////////////////////////
+/*
+    Set that the PC has talked to Sweet Marie
+    atleast once.
+*/
+//:://////////////////////////////////////////////
+//:: Created By: Keith K2 Hayward
+//:: Created On: Nov 2004
+//:://////////////////////////////////////////////
+void main()
+{
+    object oSweet = OBJECT_SELF;
+
+    SetLocalInt(oSweet, "cac_a2_sweet_d1", TRUE);
+}

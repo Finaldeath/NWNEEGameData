@@ -1,0 +1,14 @@
+//::///////////////////////////////////////////////
+//:: FileName dla_atmagnusg600
+//:: DragonLance Adventures (DLA)
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: B G P Hughes
+//:: Created On: 03/12/2005 17:09:04
+//:://////////////////////////////////////////////
+void main()
+{
+    // Set the variables
+    SetLocalInt(GetPCSpeaker(), "nHornGold", 1000);
+    AddJournalQuestEntry("Order",21,GetPCSpeaker());
+}

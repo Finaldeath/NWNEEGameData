@@ -1,0 +1,10 @@
+2DA V2.0                                                                     
+                                                                             
+           PUZZLE_SCRIPT           PUZZLE_NAME                  EASY    NORMAL    HARD
+0          exe_puz_crstpzzl        CRYSTAL_PUZZLE               ****    1         ****
+1          exe_puz_drctngrd        DIRECTION_GRID               ****    1         ****
+2          exe_puz_glblghts        GLOBE_LIGHTS                 1       1         1
+3          exe_puz_phlctpth        PHYLACTERY_PATH              1       1         1
+4          exe_puz_rncrcl          RUNE_CIRCLE                  ****    1         ****
+5          exe_puz_trpsprsn        TRIPS_PRISON                 ****    1         ****
+6          **** WARNING: EDITING ENTRIES BEFORE THIS LINE CAN CAUSE THE MODULE TO MALFUNCTION. ****

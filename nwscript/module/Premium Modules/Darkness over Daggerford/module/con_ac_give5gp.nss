@@ -1,0 +1,13 @@
+//::///////////////////////////////////////////////
+//:: FileName con_ac_give5gp
+//:: Give the player 5 gold pieces
+//:://////////////////////////////////////////////
+//:: Created By: Anya Clancy
+//:: Created On: 10/15/2005 10:36:19 PM
+//:://////////////////////////////////////////////
+void main()
+{
+    // Give the speaker some gold
+    GiveGoldToCreature(GetPCSpeaker(), 5);
+
+}

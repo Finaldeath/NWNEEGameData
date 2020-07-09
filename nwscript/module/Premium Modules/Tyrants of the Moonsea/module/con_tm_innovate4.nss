@@ -1,0 +1,18 @@
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+// MODULE: Tyrants of the Moonsea
+// NAME: cac_tm_innovate4
+// DATE: February 21, 2006.
+// AUTH: Luke Scull
+// NOTE: Appears when player has spoken with Onehand.
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+int StartingConditional()
+{
+
+    // Inspect local variables
+    if(!(GetLocalInt(GetPCSpeaker(), "onehandarena") == 1))
+        return FALSE;
+
+    return TRUE;
+}

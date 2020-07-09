@@ -1,0 +1,20 @@
+//::///////////////////////////////////////////////
+//:: con_a2_dokssblss
+//:: Copyright (c) 2004 Bioware Corp.
+//:://////////////////////////////////////////////
+/*
+    Heal the player and remove bad stuff.
+*/
+//:://////////////////////////////////////////////
+//:: Created By: Keith K2 Hayward
+//:: Created On: July, 2004
+//:://////////////////////////////////////////////
+#include "inc_safepoint"
+
+void main()
+{
+    object oPC = GetPCSpeaker();
+
+    RestoreHP(oPC);
+    SSRemoveEffects(oPC);
+}

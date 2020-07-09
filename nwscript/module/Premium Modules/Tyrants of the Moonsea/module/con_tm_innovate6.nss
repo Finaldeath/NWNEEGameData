@@ -1,0 +1,19 @@
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+// MODULE: Tyrants of the Moonsea
+// NAME: con_tm_innovate6
+// DATE: March 18, 2006.
+// AUTH: Luke Scull
+// NOTE: Appears when player is preparing for fight
+//       against magic golem.
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+int StartingConditional()
+{
+
+    // Inspect local variables
+    if(!(GetLocalInt(GetPCSpeaker(), "innovator") == 4))
+        return FALSE;
+
+    return TRUE;
+}

@@ -1,0 +1,13 @@
+//::////////////////////////////////////////////////////
+//:: MODULE: Tyrants of the Moonsea
+//:: NOTE: Quest script for "Astars Widow"
+//::////////////////////////////////////////////////////
+//:: PC has talked to Chesslyn and knows about Rikard
+//::////////////////////////////////////////////////////
+
+#include "hf_in_plot"
+
+int StartingConditional()
+{
+    return (PlotLevelCheckEquals("AstarsWidow-Status", 3));
+}

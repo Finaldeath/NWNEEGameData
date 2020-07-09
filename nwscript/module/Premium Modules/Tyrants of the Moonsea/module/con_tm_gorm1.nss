@@ -1,0 +1,23 @@
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+// MODULE: Tyrants of the Moonsea
+// NAME: con_tm_gorm1
+// DATE: September 11, 2005
+// AUTH: Luke Scull
+// NOTE: Appears if player speaks to
+//       Gormstadd after Order attack.
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+int StartingConditional()
+{
+object oPC = GetPCSpeaker();
+
+int nInt;
+nInt=GetLocalInt(oPC, "NW_JOURNAL_ENTRYVoonlar");
+
+if (nInt < 30)
+   return FALSE;
+
+return TRUE;
+}
+

@@ -1,0 +1,18 @@
+//::///////////////////////////////////////////////
+//:: cac_a2_pglg_d1
+//:: Copyright (c) 2001 Bioware Corp.
+//:://////////////////////////////////////////////
+/*
+    Set that the PC has talked to Peg Leg atleast
+    once.
+*/
+//:://////////////////////////////////////////////
+//:: Created By: Keith K2 Hayward
+//:: Created On: Nov 2004
+//:://////////////////////////////////////////////
+void main()
+{
+    object oPegLeg = OBJECT_SELF;
+
+    SetLocalInt(oPegLeg, "cac_a2_pglg_d1", TRUE);
+}

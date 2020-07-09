@@ -1,0 +1,22 @@
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+// MODULE: Tyrants of the Moonsea
+// NAME: con_tm_kazz0
+// DATE: November 9, 2005
+// AUTH: Luke Scull
+// NOTE: Appears if player has not talked to Kazz.
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+#include "hf_in_plot"
+
+int StartingConditional()
+{
+    if(PlotLevelGet("KazzTemmet") == 0)
+    {
+        return TRUE;
+    }
+    else
+    {
+        return FALSE;
+    }
+}

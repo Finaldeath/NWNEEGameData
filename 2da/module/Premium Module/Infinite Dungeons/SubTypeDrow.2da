@@ -1,0 +1,7 @@
+2DA V2.0
+
+      Name_Singular    ResRef       Class          Spellcaster
+0     "Drow Fighter"   id_elf004a   4              ****
+1     "Drow Rogue"     id_elf008a   8              ****
+2     "Drow Wizard"    id_elf010a   10             1
+3     "Drow Cleric"    id_elf002a   2              1

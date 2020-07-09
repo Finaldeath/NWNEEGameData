@@ -1,0 +1,17 @@
+//::///////////////////////////////////////////////
+//:: cac_a0_anauroch
+//:: Copyright (c) 2004 Bioware Corp.
+//:://////////////////////////////////////////////
+/*
+    The PC has hear about the Anauroch Desert
+*/
+//:://////////////////////////////////////////////
+//:: Created By: Keith K2 Hayward
+//:: Created On: July, 2004
+//:://////////////////////////////////////////////
+
+void main()
+{
+    object oPC = GetPCSpeaker();
+    SetLocalInt(oPC, "cac_a0_anauroch", TRUE);
+}

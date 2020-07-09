@@ -1,0 +1,16 @@
+//::///////////////////////////////////////////////
+//:: FileName sc_nochauntea100
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: Anya Calncy
+//:: Created On: 10/8/2005 11:07:53 PM
+//:://////////////////////////////////////////////
+int StartingConditional()
+{
+
+    // Checks to make sure PC isn't stacking the effects
+    if(!(GetLocalInt(GetPCSpeaker(), "ahc_chauntea100") != 1))
+        return FALSE;
+
+    return TRUE;
+}

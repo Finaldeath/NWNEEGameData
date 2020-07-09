@@ -1,0 +1,21 @@
+//::///////////////////////////////////////////////
+//:: con_a1_trgfr_on
+//:: Copyright (c) 2004 Bioware Corp.
+//:://////////////////////////////////////////////
+/*
+    Is the Fire Active?
+*/
+//:://////////////////////////////////////////////
+//:: Created By: Keith K2 Hayward
+//:: Created On: August, 2004
+//:://////////////////////////////////////////////
+#include "inc_trogfight"
+
+int StartingConditional()
+{
+    int iResult;
+
+    iResult = IsFireActive();
+
+    return iResult;
+}

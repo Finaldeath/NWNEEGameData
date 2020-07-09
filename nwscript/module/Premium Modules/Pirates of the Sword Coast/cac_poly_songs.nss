@@ -1,0 +1,18 @@
+//::///////////////////////////////////////////////
+//:: cac_poly_songs
+//:://////////////////////////////////////////////
+/*
+    Set how many Bard Songs Poly has left.
+*/
+//:://////////////////////////////////////////////
+//:: Created By: Rob Bartel
+//:: Created On: March 18, 2005
+//:://////////////////////////////////////////////
+
+void main()
+{
+    object oPoly = OBJECT_SELF;
+    int iUses = GetHasFeat(FEAT_BARD_SONGS, oPoly);
+
+    SetCustomToken(1506, IntToString(iUses));
+}

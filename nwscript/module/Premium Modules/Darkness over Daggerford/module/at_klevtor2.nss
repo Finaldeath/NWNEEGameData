@@ -1,0 +1,15 @@
+//::///////////////////////////////////////////////
+//:: FileName at_klevtor
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: Script Wizard
+//:: Created On: 06/11/2005 17:43:52
+//:://////////////////////////////////////////////
+void main()
+{
+    // Give the speaker the items
+    SetLocalInt(GetPCSpeaker(), "pm_klevtormet", 1);
+    //Set Module int for library check
+    SetLocalInt(GetModule(),"pm_klevtor_nomap",1);
+
+}

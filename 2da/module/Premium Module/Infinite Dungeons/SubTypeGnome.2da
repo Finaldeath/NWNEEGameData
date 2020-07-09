@@ -1,0 +1,7 @@
+2DA V2.0
+
+      Name_Singular       ResRef        Class          Spellcaster
+0     "Gnomish Warrior"   id_gnome004   4              ****
+1     "Gnomish Rogue"     id_gnome008   8              ****
+2     "Gnomish Cleric"    id_gnome002   2              1
+3     "Gnomish Wizard"    id_gnome010   10             1

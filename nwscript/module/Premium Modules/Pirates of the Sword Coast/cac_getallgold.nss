@@ -1,0 +1,19 @@
+//::///////////////////////////////////////////////
+//:: cac_getallgold
+//:: Copyright (c) 2004 Bioware Corp.
+//:://////////////////////////////////////////////
+/*
+    Take a thousand gold and give it to the
+    player.
+*/
+//:://////////////////////////////////////////////
+//:: Created By: Keith K2 Hayward
+//:: Created On: August, 2004
+//:://////////////////////////////////////////////
+void main()
+{
+    object oPC = GetPCSpeaker();
+    int iGold = 1000;
+
+    GiveGoldToCreature(oPC, iGold);
+}

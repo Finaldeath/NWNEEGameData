@@ -1,0 +1,18 @@
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+// MODULE: Tyrants of the Moonsea
+// NAME: con_tm_mardneut
+// DATE: October 6, 2005
+// AUTH: Luke Scull
+// NOTE: Appears if PC chose neutral option with Mard.
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+int StartingConditional()
+{
+
+    // Inspect local variables
+    if(!(GetLocalInt(GetPCSpeaker(), "mardneutral") == 1))
+        return FALSE;
+
+    return TRUE;
+}

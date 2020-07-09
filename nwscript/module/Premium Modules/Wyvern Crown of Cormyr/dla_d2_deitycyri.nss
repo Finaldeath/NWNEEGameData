@@ -1,0 +1,25 @@
+////////////////////////////////////////////////////////////////////////////////
+// dla_d2_deitycyri
+//
+// DLA, Wyvern Crown of Cormyr
+////////////////////////////////////////////////////////////////////////////////
+/*
+    Conditional script to show Cyric as a deity selection based on aligment of
+    the PC speaker in a conversation.
+ */
+////////////////////////////////////////////////////////////////////////////////
+// Created By: Syrsnein
+// Created On: 12 June 2006
+////////////////////////////////////////////////////////////////////////////////
+/*
+ Change history
+
+ */
+int StartingConditional()
+{
+    object oPC = GetPCSpeaker();
+    int nGE = GetAlignmentGoodEvil(oPC);
+    int nLC = GetAlignmentLawChaos(oPC);
+
+    return (nGE==ALIGNMENT_EVIL || nGE==ALIGNMENT_NEUTRAL);
+}

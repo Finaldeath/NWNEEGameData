@@ -1,0 +1,19 @@
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+// MODULE: Tyrants of the Moonsea
+// NAME: cac_tm_bennart2
+// DATE: October 16, 2005
+// AUTH: Luke Scull
+// NOTE: Player has treated Bennart coldly.
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+
+#include "hf_in_alignment"
+
+void main()
+{
+    object oPC = GetPCSpeaker();
+
+    AdjustPlayerAlignment(oPC, ALIGNMENT_EVIL, 2);
+    SetLocalInt(oPC, "bennartevil", 1);
+}

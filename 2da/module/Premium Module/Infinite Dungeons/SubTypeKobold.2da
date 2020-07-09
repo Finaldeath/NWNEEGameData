@@ -1,0 +1,7 @@
+2DA V2.0
+
+      Name_Singular            ResRef         Class          Spellcaster
+0     "Kobold Rogue"           id_kobold008   8              ****
+1     "Kobold Fighter"         id_kobold012   4              ****
+2     "Kobold Cleric"          id_kobold002   2              1
+3     "Kobold Sorceror"        id_kobold009   9              1

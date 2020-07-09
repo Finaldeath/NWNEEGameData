@@ -1,0 +1,19 @@
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+// MODULE: Tyrants of the Moonsea
+// NAME: con_tm_innovate7
+// DATE: March 18, 2006.
+// AUTH: Luke Scull
+// NOTE: Appears when player has just survived second
+//       encounter in the Pit.
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+int StartingConditional()
+{
+
+    // Inspect local variables
+    if(!(GetLocalInt(GetPCSpeaker(), "arena") == 2))
+        return FALSE;
+
+    return TRUE;
+}

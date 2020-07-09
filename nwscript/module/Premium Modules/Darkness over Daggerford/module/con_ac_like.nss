@@ -1,0 +1,13 @@
+//::///////////////////////////////////////////////
+//:: FileName con_ac_dislike
+//:: Set's the NPC to dislike the PC.
+//:://////////////////////////////////////////////
+//:: Created By: Alan Tarrant
+//:: Created On: 12/10/2005 10:51:56 PM
+//:://////////////////////////////////////////////
+void main()
+{
+    // Set the variables
+    SetLocalInt(OBJECT_SELF, "ac_dislike", 0);
+
+}

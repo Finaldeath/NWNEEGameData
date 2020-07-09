@@ -1,0 +1,20 @@
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+// MODULE: Tyrants of the Moonsea
+// NAME: pus_tm_bronsjour
+// DATE: January 1, 2006
+// AUTH: Luke Scull
+// NOTE: Creates Bron's journal in player's inventory
+//       when he clicks book.
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+void main()
+{
+
+object oTarget = GetFirstPC();
+
+CreateItemOnObject("bronsjournal", oTarget);
+
+
+DestroyObject(OBJECT_SELF, 0.5);
+}

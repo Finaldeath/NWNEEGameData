@@ -1,0 +1,17 @@
+//::///////////////////////////////////////////////
+//:: cac_dm_npccnvoff
+//:: Copyright (c) 2004 Bioware Corp.
+//:://////////////////////////////////////////////
+/*
+    Set the POTSC_DM_CONVOFF option to true.
+*/
+//:://////////////////////////////////////////////
+//:: Created By: Keith K2 Hayward
+//:: Created On: August, 2004
+//:://////////////////////////////////////////////
+
+void main()
+{
+    object oModule = GetModule();
+    SetLocalInt(oModule, "POTSC_DM_CONVOFF", TRUE);
+}

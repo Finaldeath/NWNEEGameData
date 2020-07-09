@@ -1,0 +1,7 @@
+2DA V2.0
+
+      Name_Singular              ResRef             Class          Spellcaster
+0     "Half-Fiend Warrior"       id_halffiend004    4              ****
+1     "Half-Fiend Rogue"         id_halffiend008    8              ****
+2     "Half-Fiend Cleric"        id_halffiend002    2              1
+3     "Half-Fiend Sorcerer"      id_halffiend009    10             1

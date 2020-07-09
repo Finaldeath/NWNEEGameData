@@ -1,0 +1,12 @@
+//::///////////////////////////////////////////////
+//:: FileName ac_staysat
+//:: Jonas should stay seated on the stool
+//:://////////////////////////////////////////////
+//:: Created By: Anya Clancy
+//:: Created On: 12/4/2005 3:25:02 PM
+//:://////////////////////////////////////////////
+void main()
+{
+object oChair = GetObjectByTag("ac_plc_jonasstool");
+ActionSit(oChair);
+}

@@ -1,0 +1,14 @@
+2DA V2.0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+           BUY_UPPERCASE    BUY_LOWERCASE    MONSTER_DESCRIPTOR
+0          "Buy"            "buy"            "monsters"
+1          "Purchase"       "purchase"       "creatures"
+2          "Get"            "get"            "beasts"
+3          "Find"           "find"           "savages"
+4          "Acquire"        "acquire"        "brutes"
+5          "Barter for"     "barter for"     "critters"
+6          "Invest in"      "invest in"      "wild things"
+7          "Obtain"         "obtain"         "varmints"
+8          "Procure"        "procure"        "cannon fodder"
+9          "Secure"         "secure"         "handy helpers"
+10         "Shop for"       "shop for"       ""

@@ -1,0 +1,19 @@
+2DA V2.0                                                                     
+                                                                             
+           TILESET_RESREF    TILESET_NAME           TILESET_LINKING    THEMES
+0          tib01             BEHOLDER_CAVES         033122332133133    0010000000100000
+1          tic01             CASTLE_INTERIOR        302311322212321    0101010111011110
+2          tdc01             CRYPT                  320132333212322    0101110000100110
+3          ttd01             DESERT                 131033123213123    1000101110111111
+4          tid01             DROW_INTERIOR          213301331322321    0001111011000001
+5          tde01             DUNGEON                212310331322111    0011111111001111
+6          ttf01             FOREST                 333133033212233    1000101110111111
+7          tti01             FROZEN_WASTES          323233303133132    1000001110111101
+8          tii01             ILLITHID_INTERIOR      223311330323322    0010100011000001
+9          tdm01             MINES_AND_CAVERNS      122233213021122    1110101110111111
+10         tdr01             RUINS                  311122132201211    0101011111101111
+11         tds01             SEWERS                 322322233110312    0100000010101010
+12         ttu01             UNDERDARK              133131213123033    1010101000101001
+13         tsw01             STEAMWORKS             322221332211302    0100000110000000
+14         tni02             KEEP_INTERIOR_STONE    312311322212320    0101010111011110
+15         **** WARNING: EDITING ENTRIES BEFORE THIS LINE CAN CAUSE THE MODULE TO MALFUNCTION. ****

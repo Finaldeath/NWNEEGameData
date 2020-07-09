@@ -1,0 +1,20 @@
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+// MODULE: Tyrants of the Moonsea
+// NAME: con_tm_garth1
+// DATE: February 20, 2006
+// AUTH: Luke Scull
+// NOTE: Appears if player has spoken to Garth before.
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+
+//TODO:DELETE
+int StartingConditional()
+{
+
+    // Inspect local variables
+    if(!(GetLocalInt(GetPCSpeaker(), "garth") == 1))
+        return FALSE;
+
+    return TRUE;
+}

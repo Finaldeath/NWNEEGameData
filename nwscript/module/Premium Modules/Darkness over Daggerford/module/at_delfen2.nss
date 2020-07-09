@@ -1,0 +1,14 @@
+//::///////////////////////////////////////////////
+//:: FileName at_delfen2
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: Script Wizard
+//:: Created On: 15/11/2005 22:50:41
+//:://////////////////////////////////////////////
+#include "hf_in_plot"
+void main()
+{
+    // Give the speaker the items
+    CreateItemOnObject("a2_pm_impchest2", GetPCSpeaker(), 1);
+    PlotLevelSet(GetTag(OBJECT_SELF), 1);
+}

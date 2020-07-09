@@ -1,0 +1,19 @@
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+// MODULE: Tyrants of the Moonsea
+// NAME: con_tm_innovate2
+// DATE: February 21, 2006.
+// AUTH: Luke Scull
+// NOTE: Appears when player has been told to speak
+//       with Onehand.
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+int StartingConditional()
+{
+
+    // Inspect local variables
+    if(!(GetLocalInt(GetPCSpeaker(), "innovator") == 2))
+        return FALSE;
+
+    return TRUE;
+}

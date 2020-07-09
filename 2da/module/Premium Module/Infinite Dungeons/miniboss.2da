@@ -1,0 +1,82 @@
+2DA V2.0
+      Name_Singular                     Name_Plural                        ResRef              MinCR    MaxCR    Class    ClassStartHD    Attributes    Themes
+0     "Minotaur Shaman"                 "Minotaur Shaman"                  id_miscmb001        1        99       ****     ****            11111111      1000000000000000
+1     "Primordial Render"               "Primordial Renders"               id_miscmb002        2        99       ****     ****            00011100      1000000000000000
+2     "Manticore Paragon"               "Manticore Paragons"               id_miscmb003        3        99       ****     ****            00011100      1000000000000000
+3     "Imperial Medusa"                 "Imperial Medusae"                 id_miscmb004        5        99       ****     ****            11111110      1000000000000000
+4     "Elder Sea Hag"                   "Elder Sea Hags"                   id_miscmb005        3        99       10       5               11111110      1000000000000000
+5     "Ringleader"                      "Ringleaders"                      id_banditmb001      1/2      99       8        5               11011111      0100000000000000
+6     "Guild Leader"                    "Guild Leaders"                    id_banditmb002      1/2      99       1        5               11011111      0100000000000000
+7     "Robber Baron"                    "Robber Barons"                    id_banditmb003      1/2      99       4        15              11011111      0100000000000000
+8     "Prince of Thieves"               "Princes of Thieves"               id_banditmb004      1/2      99       ****     ****            11011111      0100000000000000
+9     "Lady of the Mask"                "Ladies of the Mask"               id_banditmb005      1/2      99       10       15              11111111      0100000000000000
+10    "Unblinking One"                  "Unblinking Ones"                  id_beholdermb001    11       99       10       5               01111100      0010000000000000
+11    "Minion of the All-Seeing Eye"    "Minions of the All-Seeing Eye"    id_beholdermb002    11       99       10       5               01111100      0010000000000000
+12    "Favored Servant"                 "Favored Servants"                 id_beholdermb003    1        99       ****     ****            11011100      0010000000000000
+13    "High Sentinel"                   "High Sentinels"                   id_beholdermb004    12       99       ****     ****            01011100      0010000000000000
+14    "Arch Orb"                        "Arch Orbs"                        id_beholdermb005    2        99       10       5               01111100      0010000000000000
+15    "Accursed One"                    "Accursed Ones"                    id_cultistmb001     1        99       2        5               11011111      0001000000000000
+16    "High Priestess"                  "High Priestesses"                 id_cultistmb002     1        99       2        5               11111111      0001000000000000
+17    "Soul Stealer"                    "Soul Stealers"                    id_cultistmb003     1/2      99       10       20              11111111      0001000000000000
+18    "Dark Prelate"                    "Dark Prelates"                    id_cultistmb004     1/2      99       0        30              11111111      0001000000000000
+19    "Arch Heritic"                    "Arch Heretics"                    id_cultistmb005     1/2      99       8        30              11111111      0001000000000000
+20    "Unseelie Courtesan"              "Unseelie Courtesans"              id_darkfeymb001     2        99       ****     ****            11011111      0000100000000000
+21    "Lighteater Guard"                "Lighteater Guards"                id_darkfeymb002     1        99       4        5               11011111      0000100000000000
+22    "Lighteater Ward"                 "Lighteater Wards"                 id_darkfeymb003     1        99       10       10              11111111      0000100000000000
+23    "Unseelie Baron"                  "Unseelie Barons"                  id_darkfeymb004     1        99       ****     ****            11011111      0000100000000000
+24    "Unseelie Lord"                   "Unseelie Lords"                   id_darkfeymb005     1        99       10       5               11111111      0000100000000000
+25    "Arch Minion"                     "Arch Minions"                     id_demonmb001       7        99       1        5               11111110      0000010000000000
+26    "Vile Contender"                  "Vile Contenders"                  id_demonmb002       10       99       0        5               11111110      0000010000000000
+27    "Fell Lieutenant"                 "Fell Lieutenants"                 id_demonmb003       1        99       10       10              11111111      0000010000000000
+28    "High Fiend"                      "High Fiend"                       id_demonmb004       6        99       31       10              01111110      0000010000000000
+29    "Fell Master"                     "Fell Master"                      id_demonmb005       14       99       ****     ****            01111110      0000010000000000
+30    "White Sire"                      "White Sires"                      id_dragonmb001      20       99       ****     ****            01111100      0000001000000000
+31    "Black Sire"                      "Black Sires"                      id_dragonmb002      21       99       ****     ****            01111100      0000001000000000
+32    "Paragon Wyrmling"                "Paragon Wyrmlings"                id_dragonmb003      1        99       10       15              11111100      0000001000000000
+33    "Shadow Dragon"                   "Shadow Dragons"                   id_dragonmb004      10       99       ****     ****            01111100      0000001000000000
+34    "Red Sire"                        "Red Sires"                        id_dragonmb005      10       99       10       10              01111100      0000001000000000
+35    "Smasher"                         "Smashers"                         id_giantmb001       10       99       0        5               01011110      0000000100000000
+36    "Basher"                          "Bashers"                          id_giantmb002       8        99       0        5               01011100      0000000100000000
+37    "Warden"                          "Wardens"                          id_giantmb003       2        99       7        1               01011110      0000000100000000
+38    "Warmaker"                        "Warmakers"                        id_giantmb004       1        99       4        1               01011110      0000000100000000
+39    "Widowgaurd"                      "Widowgaurds"                      id_giantmb005       3        99       10       15              11011110      0000000100000000
+40    "Mud Tribe Elder"                 "Mud Tribe Elders"                 id_humanoidmb001    1/2      99       2        5               11011110      0000000010000000
+41    "Rat Tribe Elder"                 "Rat Tribe Elders"                 id_humanoidmb002    1/4      99       3        5               11011111      0000000010000000
+42    "Dog Tribe Elder"                 "Dog Tribe Elders"                 id_humanoidmb003    1/3      99       10       10              11111110      0000000010000000
+43    "Rib Tribe Elder"                 "Rib Tribe Elders"                 id_humanoidmb004    2        99       ****     ****            11011111      0000000010000000
+44    "Bone Tribe Elder"                "Bone Tribe Elders"                id_humanoidmb005    1/2      99       2        10              11111111      0000000010000000
+45    "Forgotten Servant"               "Forgotten Servants"               id_magicmb001       3        99       8        5               00011100      0000000001000000
+46    "Accursed Servant"                "Accursed Servants"                id_magicmb002       13       99       ****     ****            00111100      0000000001000000
+47    "Enchanted Servant"               "Enchanted Servants"               id_magicmb003       1/2      99       ****     ****            10011110      0000000001000000
+48    "Favored Servant"                 "Favored Servants"                 id_magicmb004       5        99       4        10              00011100      0000000001000000
+49    "Beloved Servant"                 "Beloved Servants"                 id_magicmb005       3        99       10       10              00111100      0000000001000000
+50    "Hive Worker"                     "Hive Workers"                     id_insectmb001      3        99       ****     ****            10011100      0000000000100000
+51    "Hive Watcher"                    "Hive Watchers"                    id_insectmb002      1        99       ****     ****            10011100      0000000000100000
+52    "Hive Warrior"                    "Hive Warriors"                    id_insectmb003      2        99       ****     ****            10011000      0000000000100000
+53    "Hive Defender"                   "Hive Defenders"                   id_insectmb004      2        99       ****     ****            00011100      0000000000100000
+54    "Hive Breeder"                    "Hive Breeders"                    id_insectmb005      3        99       ****     ****            00011100      0000000000100000
+55    "Baron"                           "Barons"                           id_lycanmb001       1/2      99       ****     ****            11111100      0000000000010000
+56    "Contessa"                        "Contessas"                        id_lycanmb002       5        99       8        5               11111100      0000000000010000
+57    "Earl"                            "Earls"                            id_lycanmb003       3        99       ****     ****            11011100      0000000000010000
+58    "Marquis"                         "Marquis"                          id_lycanmb004       3        99       30       15              11011100      0000000000010000
+59    "Duchess"                         "Duchess"                          id_lycanmb005       3        99       ****     ****            11011100      0000000000010000
+60    "Meelok Hierophant"               "Meelok Hierophants"               id_lizardmb001      1        99       3        5               11111110      0000000000001000
+61    "Garlok Hierophant"               "Garlok Hierophants"               id_lizardmb002      1        99       3        5               11111110      0000000000001000
+62    "Sleeblok Hierophant"             "Sleeblok Hierophants"             id_lizardmb003      1        99       0        15              11011110      0000000000001000
+63    "Bzurglok Hierophant"             "Bzurglok Hierophants"             id_lizardmb004      1        99       ****     ****            11111110      0000000000001000
+64    "Zthissqlok Hierophant"           "Zthissqlok Hierophants"           id_lizardmb005      1        99       2        20              11111110      0000000000001000
+65    "Poltergeist"                     "Poltergeists"                     id_etherealmb001    3        99       ****     ****            10111110      0000000000000100
+66    "Forgotten Warrior"               "Forgotten Warriors"               id_etherealmb002    1/2      99       2        5               10011111      0000000000000100
+67    "Forgotten King"                  "Forgotten Kings"                  id_etherealmb003    1/2      99       0        20              10011110      0000000000000100
+68    "Bonelord"                        "Bonelords"                        id_etherealmb004    8        99       ****     ****            00011100      0000000000000100
+69    "High Haunt"                      "High Haunts"                      id_etherealmb005    3        99       ****     ****            11111100      0000000000000100
+70    "Rotten Servant"                  "Rotten Servants"                  id_fleshymb001      1        99       8        5               10011100      0000000000000010
+71    "Rotten Master"                   "Rotten Masters"                   id_fleshymb002      1        99       4        5               10011100      0000000000000010
+72    "Zombie Lord"                     "Zombie Lords"                     id_fleshymb003      1/2      99       ****     ****            10011110      0000000000000010
+73    "Forsaken Pharoah"                "Forsaken Pharoahs"                id_fleshymb004      3        99       2        5               11011110      0000000000000010
+74    "He Who Hungers"                  "Those Who Hunger"                 id_fleshymb005      3        99       8        10              11011110      0000000000000010
+75    "Consort"                         "Consorts"                         id_undermb001       1        99       2        5               11111111      0000000000000001
+76    "Mistress"                        "Mistresses"                       id_undermb002       1        99       2        5               11111111      0000000000000001
+77    "Governess"                       "Governesses"                      id_undermb003       1        99       ****     ****            11111111      0000000000000001
+78    "Matron"                          "Matrons"                          id_undermb004       1        99       8        10              11111111      0000000000000001
+79    "Matriarch"                       "Matriarchs"                       id_undermb005       1        99       ****     ****            11111111      0000000000000001

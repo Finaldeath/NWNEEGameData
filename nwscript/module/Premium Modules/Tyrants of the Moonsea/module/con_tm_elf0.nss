@@ -1,0 +1,13 @@
+//::////////////////////////////////////////////////////
+//:: MODULE: Tyrants of the Moonsea
+//:: NOTE: Checks Hillsfar arena outcome for Elf
+//::////////////////////////////////////////////////////
+//:: Elf stayed alive during arena sequence 4
+//::////////////////////////////////////////////////////
+
+#include "hf_in_plot"
+
+int StartingConditional()
+{
+    return (PlotLevelCheckEquals("Elf-Arena-Outcome", 0));
+}

@@ -1,0 +1,19 @@
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+// MODULE: Tyrants of the Moonsea
+// NAME: con_tm_cheswick3
+// DATE: December 26, 2005
+// AUTH: Luke Scull
+// NOTE: Appears when PC has already spoken with
+//       Cheswick.
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+int StartingConditional()
+{
+
+    // Inspect local variables
+    if(!(GetLocalInt(GetPCSpeaker(), "cheswickspoke") == 1))
+        return FALSE;
+
+    return TRUE;
+}

@@ -1,0 +1,22 @@
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+// MODULE: Tyrants of the Moonsea
+// NAME: con_tm_grazlives
+// DATE: November 9, 2005
+// AUTH: Luke Scull
+// NOTE: Appears if Grazkhar has not been slain
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+#include "hf_in_plot"
+
+int StartingConditional()
+{
+    if(PlotLevelGet("Grazkahn") < 4)
+    {
+        return TRUE;
+    }
+    else
+    {
+        return FALSE;
+    }
+}

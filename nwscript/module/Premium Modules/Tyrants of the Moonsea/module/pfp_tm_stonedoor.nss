@@ -1,0 +1,14 @@
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+// MODULE: Tyrants of the Moonsea
+// NAME: pfp_tm_stonedoor
+// DATE: December 28, 2005
+// AUTH: Luke Scull
+// NOTE: Pop-up text for door in Frost Giant Cave.
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+void main()
+{
+SpeakString("This heavy stone door is locked and won't budge an inch. You can hear the sounds of a large cooking pot bubbling from within.");
+}
+

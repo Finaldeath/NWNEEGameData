@@ -1,0 +1,16 @@
+//::///////////////////////////////////////////////
+//:: FileName dla_scimeldanota
+//:: DragonLance Adventures (DLA)
+//:://////////////////////////////////////////////
+//
+//  Returns TRUE if Imelda don't want to talk to the PC
+//
+//:://////////////////////////////////////////////
+//:: Created By: B G P Hughes
+//:: Created On: 24/01/2006
+//:://////////////////////////////////////////////
+int StartingConditional()
+{
+    // Inspect local variables
+    return GetLocalInt(OBJECT_SELF, "nNoTalk") == 1;
+}

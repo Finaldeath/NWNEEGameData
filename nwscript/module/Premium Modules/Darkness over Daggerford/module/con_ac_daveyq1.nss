@@ -1,0 +1,13 @@
+//::///////////////////////////////////////////////
+//:: FileName con_ac_daveyq1
+//:: Set Davey quest to started
+//:://////////////////////////////////////////////
+//:: Created By: Anya Clancy
+//:: Created On: 10/15/2005 2:13:17 PM
+//:://////////////////////////////////////////////
+void main()
+{
+    // Set the variables
+    SetLocalInt(GetPCSpeaker(), "ac_davey_quest", 1);
+
+}

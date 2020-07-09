@@ -1,0 +1,19 @@
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+// MODULE: Tyrants of the Moonsea
+// NAME: cac_tm_cheswick1
+// DATE: December 26, 2005
+// AUTH: Luke Scull
+// NOTE: Adds journal entry -- PC has agreed to help
+//       Cheswick with his problem.
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+
+void main()
+{
+    object oPC = GetPCSpeaker();
+
+    SetLocalInt(oPC, "cheswickhelp", 1);
+
+    AddJournalQuestEntry("AMerchantsTale", 10, oPC);
+}

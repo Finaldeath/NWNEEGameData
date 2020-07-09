@@ -1,0 +1,18 @@
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+// MODULE: Tyrants of the Moonsea
+// NAME: con_tm_ogson4
+// DATE: December 3, 2005
+// AUTH: Luke Scull
+// NOTE: Appears if player has already spoken with him.
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+int StartingConditional()
+{
+
+    // Inspect local variables
+    if(!(GetLocalInt(GetPCSpeaker(), "ogsonspoke") == 1))
+        return FALSE;
+
+    return TRUE;
+}

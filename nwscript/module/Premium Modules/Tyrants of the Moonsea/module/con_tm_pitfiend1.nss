@@ -1,0 +1,19 @@
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+// MODULE: Tyrants of the Moonsea
+// NAME: con_tm_pitfiend1
+// DATE: April 1, 2006
+// AUTH: Luke Scull
+// NOTE: Appears when player has already spoken with
+//       the pit fiend Jeeves.
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+int StartingConditional()
+{
+
+    // Inspect local variables
+    if(!(GetLocalInt(GetPCSpeaker(), "jeeves") == 1))
+        return FALSE;
+
+    return TRUE;
+}

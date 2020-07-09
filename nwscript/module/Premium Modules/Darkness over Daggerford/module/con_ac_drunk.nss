@@ -1,0 +1,11 @@
+//::///////////////////////////////////////////////
+//:: FileName con_ac_drunk
+//:: Make NPC appear drunk
+//:://////////////////////////////////////////////
+//:: Created By: Alan Tarrant
+//:: Created On: 12/23/2005 3:25:02 PM
+//:://////////////////////////////////////////////
+void main()
+{
+ActionPlayAnimation (ANIMATION_LOOPING_PAUSE_DRUNK,1.0,999.0);
+}

@@ -1,0 +1,16 @@
+//::///////////////////////////////////////////////
+//:: FileName dla_scpcmetimeld
+//:: DragonLance Adventures (DLA)
+//:://////////////////////////////////////////////
+//
+//  Check if PC already met Imelda
+//
+//:://////////////////////////////////////////////
+//:: Created By: B G P Hughes
+//:: Created On: 12/03/2006
+//:://////////////////////////////////////////////
+int StartingConditional()
+{
+    // Inspect local variables
+    return (GetLocalInt(GetPCSpeaker(), "nMetImelda") == 1);
+}

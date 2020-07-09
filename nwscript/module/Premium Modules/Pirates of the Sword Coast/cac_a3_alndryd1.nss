@@ -1,0 +1,18 @@
+//::///////////////////////////////////////////////
+//:: cac_a3_alndryd1
+//:: Copyright (c) 2001 Bioware Corp.
+//:://////////////////////////////////////////////
+/*
+    The PC has talked to the Allendrys ghost
+    atleast once.
+*/
+//:://////////////////////////////////////////////
+//:: Created By: Keith Hayward
+//:: Created On: January 2005
+//:://////////////////////////////////////////////
+
+void main()
+{
+    object oSelf = OBJECT_SELF;
+    SetLocalInt(oSelf, "cac_a3_alndryd1", TRUE);
+}

@@ -1,0 +1,13 @@
+//::///////////////////////////////////////////////
+//:: FileName con_ac_chesqst8
+//:: Set cheese quest to complete (helped Yentai against Millie)
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: Alan Tarrant
+//:: Created On: 12/17/2005 2:13:19 PM
+//:://////////////////////////////////////////////
+void main()
+{
+   SetLocalInt(GetPCSpeaker(), "ac_cheese_quest", 8);
+GiveXPToCreature(GetPCSpeaker(),250);
+}

@@ -1,0 +1,11 @@
+//::///////////////////////////////////////////////
+//:: FileName con_ac_rwrd300
+//:: Set player to receive a 300 gold reward from Maerovyna
+//:://////////////////////////////////////////////
+//:: Created By: Alan Tarrant
+//:: Created On: 11/27/2005 4:47:28 PM
+//:://////////////////////////////////////////////
+void main()
+{
+    SetLocalInt(OBJECT_SELF,"ac_reward",300);
+}

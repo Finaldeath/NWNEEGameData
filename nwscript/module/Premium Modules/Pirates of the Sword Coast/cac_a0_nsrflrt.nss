@@ -1,0 +1,17 @@
+//::///////////////////////////////////////////////
+//:: cac_a0_nsrflrt
+//:: Copyright (c) 2001 Bioware Corp.
+//:://////////////////////////////////////////////
+/*
+    Set that the PC Flirted with Nisar in Act 0
+*/
+//:://////////////////////////////////////////////
+//:: Created By: Keith K2 Hayward
+//:: Created On: Nov 2004
+//:://////////////////////////////////////////////
+
+void main()
+{
+    object oPC = GetPCSpeaker();
+    SetLocalInt(oPC, "POTSC_A0_NISARROMANCE", TRUE);
+}

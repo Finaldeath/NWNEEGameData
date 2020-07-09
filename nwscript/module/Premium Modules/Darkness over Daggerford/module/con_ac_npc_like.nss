@@ -1,0 +1,13 @@
+//::///////////////////////////////////////////////
+//:: FileName con_ac_npc_like
+//:: Set's the NPC to like the player
+//:://////////////////////////////////////////////
+//:: Created By: Anya Clancy
+//:: Created On: 10/27/2005 10:51:56 PM
+//:://////////////////////////////////////////////
+void main()
+{
+    // Set the variables
+    SetLocalInt(OBJECT_SELF, "like", 1);
+
+}

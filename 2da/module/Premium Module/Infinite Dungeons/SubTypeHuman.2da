@@ -1,0 +1,7 @@
+2DA V2.0
+
+      Name_Singular     ResRef        Class          Spellcaster
+0     "Human Fighter"   id_human004   4              ****
+1     "Human Rogue"     id_human008   8              ****
+2     "Human Cleric"    id_human002   2              1
+3     "Human Wizard"    id_human010   10             1

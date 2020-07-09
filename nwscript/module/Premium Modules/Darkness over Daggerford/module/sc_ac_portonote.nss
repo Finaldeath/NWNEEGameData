@@ -1,0 +1,18 @@
+//::///////////////////////////////////////////////
+//:: FileName sc_ac_portonote
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: Script Wizard
+//:: Created On: 2/5/2006 5:16:10 PM
+//:://////////////////////////////////////////////
+#include "nw_i0_tool"
+
+int StartingConditional()
+{
+
+	// Make sure the PC speaker has these items in their inventory
+	if(!HasItem(GetPCSpeaker(), "ac_portonote"))
+		return FALSE;
+
+	return TRUE;
+}

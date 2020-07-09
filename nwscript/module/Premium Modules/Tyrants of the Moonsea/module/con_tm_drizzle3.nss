@@ -1,0 +1,18 @@
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+// MODULE: Tyrants of the Moonsea
+// NAME: con_tm_drizzle3
+// DATE: February 21, 2006.
+// AUTH: Luke Scull
+// NOTE: Appears if player hasn't chosen both potions.
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+int StartingConditional()
+{
+
+    // Inspect local variables
+    if(!(GetLocalInt(OBJECT_SELF, "potions") != 2))
+        return FALSE;
+
+    return TRUE;
+}

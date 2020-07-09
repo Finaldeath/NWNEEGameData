@@ -1,0 +1,17 @@
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+// MODULE: Tyrants of the Moonsea
+// NAME: cac_tm_blizzard4
+// DATE: March 18, 2006
+// AUTH: Luke Scull.
+// NOTE: Set int so Blizzard's dialogue updates.
+//////////////////////////////////////////////////////
+
+
+//TODO:DELETE
+// using hf_ut_plot_* instead
+
+void main()
+{
+    SetLocalInt(GetPCSpeaker(), "blizzard", 3);
+}

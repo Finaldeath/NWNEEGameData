@@ -1,0 +1,12 @@
+//::///////////////////////////////////////////////
+//:: FileName con_ac_elveronn1
+//:: Set player met Elveronne
+//:://////////////////////////////////////////////
+//:: Created By: Anya Clancy
+//:: Created On: 11/13/2005 8:08:58 PM
+//:://////////////////////////////////////////////
+void main()
+{
+    // Set the variables
+    SetLocalInt(GetPCSpeaker(), "elveronne_quest", 1);
+}

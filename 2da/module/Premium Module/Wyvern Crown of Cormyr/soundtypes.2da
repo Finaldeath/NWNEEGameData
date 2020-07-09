@@ -1,0 +1,8 @@
+2DA V2.0
+
+    Label           TemplateResRef
+
+0   Waterfall       NW_SND_WATERFALL
+1   BabblingBrook   NW_SND_STREAM
+2   Waterfall_top   waterfalloveredg
+3   Waterfall_bot   waterfalllarge

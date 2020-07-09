@@ -1,0 +1,10 @@
+////////////////////////////////////////////////////////////////////////////////
+// dla_scselllac - Lacinda's horse?
+// Scripted By: Deva Winblood   8/3/2006
+////////////////////////////////////////////////////////////////////////////////
+int StartingConditional()
+{
+    object oHorse=GetLocalObject(OBJECT_SELF,"oInterested");
+    if (GetTag(oHorse)=="LacHorse") return TRUE;
+    return FALSE;
+}

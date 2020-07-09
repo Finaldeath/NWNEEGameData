@@ -1,0 +1,17 @@
+//::///////////////////////////////////////////////
+//:: cac_a2_redtip_re
+//:: Copyright (c) 2005 Bioware Corp.
+//:://////////////////////////////////////////////
+/*
+    Redtip: reset 1-liner variable
+*/
+//:://////////////////////////////////////////////
+//:: Created By: Jonathan Epp
+//:: Created On: March 14/05
+//:://////////////////////////////////////////////
+#include "inc_global"
+
+void main()
+{
+    SetLocalInt(OBJECT_SELF, l_n_FIGHTCLUB_REDTIP_SAY_1LINER, FALSE);
+}

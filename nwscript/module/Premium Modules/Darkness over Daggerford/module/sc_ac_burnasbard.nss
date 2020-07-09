@@ -1,0 +1,16 @@
+//::///////////////////////////////////////////////
+//:: FileName sc_ac_burnasbard
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: Alan Tarrant
+//:: Created On: 11/20/2005 12:15:13 AM
+//:://////////////////////////////////////////////
+int StartingConditional()
+{
+
+    // Inspect local variables
+    if(!(GetLocalInt(GetPCSpeaker(), "ac_burnas_bard") == 1))
+        return FALSE;
+
+    return TRUE;
+}

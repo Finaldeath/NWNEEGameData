@@ -1,0 +1,14 @@
+//::///////////////////////////////////////////////
+//:: FileName cac_tm_hilrad7
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: Script Wizard
+//:: Created On: 28/06/2006 23:51:31
+//:://////////////////////////////////////////////
+void main()
+{
+    // Set the variables
+    object oPC = GetPCSpeaker();
+    SetLocalInt(oPC, "nodominion", 1);
+    AddJournalQuestEntry("OrderoftheCrippledFang", 41, oPC);
+}

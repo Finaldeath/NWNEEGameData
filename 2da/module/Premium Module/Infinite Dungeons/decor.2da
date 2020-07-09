@@ -1,0 +1,193 @@
+2DA V2.0                                                                  
+                                                                             
+        OBJECT_RESREF    OBJECT_NAME                        DECOR_TYPE    TILESETS
+0       id1_plc001       "Alchemist's Apparatus"            01            010010001000001
+1       id1_plc002       "Altar"                            10            011001000000001
+2       id1_plc003       "Altar"                            10            000100110110100   
+3       id1_plc004       "Altar"                            10            000100100100000   
+4       id1_plc005       "Altar"                            10            000010001000000   
+5       id1_plc006       "Cage"                             10            011001000010001
+6       id1_plc007       "Anvil"                            00            000000000000000   
+7       id1_plc008       "Archery Target"                   00            000000000000000   
+8       id1_plc009       "Armoire"                          01            010000000000001
+9       id1_plc010       "Arrow-filled Corpse"              10            011100110010001
+10      id1_plc011       "Banner"                           00            010000000000001
+11      id1_plc012       "Barrel"                           00            010100110111111
+12      id1_plc013       "Bench"                            01            010000000000001
+13      id1_plc014       "Big Hole"                         10            100100110100100   
+14      id1_plc015       "Big_Mushroom"                     11            000000000100100   
+15      id1_plc016       "Birdbath"                         11            010000100010001
+16      id1_plc017       "Birdcage"                         00            000000000000000   
+17      id1_plc018       "Black Barrel"                     00            000010001000000   
+18      id1_plc019       "Black Crate"                      00            000010001000000   
+19      id1_plc020       "Black Crate"                      00            000010001000000   
+20      id1_plc021       "Bloodstain"                       11            111111111111111
+21      id1_plc022       "Body"                             10            001100110110100   
+22      id1_plc023       "Bones"                            10            111101110111111
+23      id1_plc024       "Bones"                            10            111101110111111
+24      id1_plc025       "Book Piles"                       01            010010001000001
+25      id1_plc026       "Bookshelf"                        01            010000000000001
+26      id1_plc027       "Bookshelf"                        01            010000000000001
+27      id1_plc028       "Bookshelf"                        01            010000000000001
+28      id1_plc029       "Boulder"                          11            000100100110101
+29      id1_plc030       "Box"                              00            011100110111111
+30      id1_plc031       "Box"                              00            011100110111111
+31      id1_plc032       "Box"                              00            011100110111111
+32      id1_plc033       "Box"                              00            011100110111111
+33      id1_plc034       "Brazier"                          01            010001000000001
+34      id1_plc035       "Broken Bookcase"                  01            010000000000001
+35      id1_plc036       "Broken Furniture"                 01            010000000000001
+36      id1_plc037       "Broken Furniture"                 01            010000000000001
+37      id1_plc038       "Broken Table"                     10            010000000000001
+38      id1_plc039       "Broken Table"                     10            010000000000001
+39      id1_plc040       "Butterflies"                      11            000000100000000   
+40      id1_plc041       "Cabinet"                          01            010000000000001
+41      id1_plc042       "Small Cactus"                     11            000100000000000   
+42      id1_plc043       "Large Cactus"                     11            000100000000000   
+43      id1_plc044       "Campfire"                         10            000100110100100   
+44      id1_plc045       "Campfire"                         10            000100100100000   
+45      id1_plc046       "Campfire"                         10            000100100100000   
+46      id1_plc047       "Candelabra"                       01            010000000000001
+47      id1_plc048       "Cauldron"                         10            000100100100100   
+48      id1_plc049       "Large Chair"                      00            010000000000001
+49      id1_plc050       "Chandelier"                       10            010000000000001
+50      id1_plc051       "Chest"                            00            111101110111111
+51      id1_plc052       "Chest"                            00            111101110111111
+52      id1_plc053       "Chest"                            00            111101110111111
+53      id1_plc054       "Chest"                            00            111101110111111
+54      id1_plc055       "Chest of Drawers"                 01            010000000000001
+55      id1_plc056       "Corpse"                           10            001100110110100   
+56      id1_plc057       "Corpse"                           10            001100110110100   
+57      id1_plc058       "Corpse"                           10            001100110110100   
+58      id1_plc059       "Corpse"                           10            001100110110100   
+59      id1_plc060       "Couch"                            01            010000000000001
+60      id1_plc061       "Crystal"                          01            000000000100100   
+61      id1_plc062       "Debris"                           01            000000000110000   
+62      id1_plc063       "Desert Boulder"                   11            000100000000000   
+63      id1_plc064       "Desert Boulder"                   10            000100000000000   
+64      id1_plc065       "Desert Rocks"                     01            000100000000000   
+65      id1_plc066       "Desk"                             01            010000000000001
+66      id1_plc067       "Large Desk"                       01            010000000000001
+67      id1_plc068       "Small Desk"                       01            010000000000001
+68      id1_plc069       "Pool"                             11            010000100010011
+69      id1_plc070       "Dragon Skull"                     10            000100110110100   
+70      id1_plc071       "Dragon Statue"                    00            000001000100100   
+71      id1_plc072       "Bookcase"                         01            000011001000000   
+72      id1_plc073       "Chest"                            00            000010001000000   
+73      id1_plc074       "Dresser"                          01            000010001000000   
+74      id1_plc075       "Dresser"                          01            000010001000000   
+75      id1_plc076       "Table"                            00            000000000000000   
+76      id1_plc077       "Fern"                             11            000000100000000   
+77      id1_plc078       "Banner"                           01            010000000000001
+78      id1_plc079       "Banner"                           01            010000000000001
+79      id1_plc080       "Banner"                           01            010000000000001
+80      id1_plc081       "Banner"                           01            010000000000001
+81      id1_plc082       "Banner"                           01            010000000000001
+82      id1_plc083       "Banner"                           01            010000000000001
+83      id1_plc084       "Banner"                           01            010000000000001
+84      id1_plc085       "Flaming Statue"                   11            000001000000000   
+85      id1_plc086       "Floor-anchored Shackles"          11            011001000111011
+86      id1_plc087       "Fly-clad Plague Victim Corpse"    10            001100100110100   
+87      id1_plc088       "Forge"                            10            000000000001010   
+88      id1_plc089       "Fountain"                         11            010000100011001
+89      id1_plc090       "Free Torch"                       01            010000000000001
+90      id1_plc091       "Placard"                          01            010000000000001
+91      id1_plc092       "Placard"                          01            010000000000001
+92      id1_plc093       "Placard"                          01            010000000000001
+93      id1_plc094       "Placard"                          01            010000000000001
+94      id1_plc095       "Placard"                          01            010000000000001
+95      id1_plc096       "Placard"                          01            010000000000001
+96      id1_plc097       "Placard"                          01            010000000000001
+97      id1_plc098       "Placard"                          01            010000000000001
+98      id1_plc099       "Placard"                          01            010000000000001
+99      id1_plc100       "Gargoyle Statue"                  11            011110001010101
+100     id1_plc101       "Giant Statue Head"                10            000100000000000   
+101     id1_plc102       "Bones"                            10            111101110111111
+102     id1_plc103       "Gong"                             01            011000000010001
+103     id1_plc104       "Grass Tufts"                      11            000000100000000   
+104     id1_plc105       "Grate"                            11            001001000011010   
+105     id1_plc106       "Grate"                            11            010000000011011
+106     id1_plc107       "Headstone"                        11            000100110000000   
+107     id1_plc108       "Cage"                             01            011001000010001
+108     id1_plc109       "Ice Floe"                         11            000000010000000   
+109     id1_plc110       "Table"                            00            000000000000000   
+110     id1_plc111       "Impaled Corpse"                   10            001001100100000   
+111     id1_plc112       "Impaled Head"                     11            001001100100000   
+112     id1_plc113       "Impaled Monster Corpse"           10            001001100100000   
+113     id1_plc114       "Impaled Monster Head"             11            001001100100000   
+114     id1_plc115       "Large Mirror"                     01            000010001000000   
+115     id1_plc116       "Sheets of Paper"                  01            010010001000001
+116     id1_plc117       "Sign"                             00            000000000000000   
+117     id1_plc118       "Sign"                             00            000000000000000   
+118     id1_plc119       "Sign"                             00            000000000000000   
+119     id1_plc120       "Sign"                             01            011101100010001
+120     id1_plc121       "Sign"                             00            000000000000000   
+121     id1_plc122       "Sign"                             00            000000000000000   
+122     id1_plc123       "Sign"                             01            010000000000001
+123     id1_plc124       "Sign"                             00            000000000000000   
+124     id1_plc125       "Mining Well"                      10            000000000100000   
+125     id1_plc126       "Mirror"                           01            010000000000001
+126     id1_plc127       "Mold"                             11            001000100111100   
+127     id1_plc128       "Monster Statue"                   10            011101000010111
+128     id1_plc129       "Moss"                             11            000000100011000   
+129     id1_plc130       "Mushrooms"                        11            000000000100100   
+130     id1_plc131       "Mushrooms"                        11            000000000100100   
+131     id1_plc132       "Obelisk"                          10            000001000000100   
+132     id1_plc133       "Pebble Patch"                     10            000100100000000   
+133     id1_plc134       "Pedestal"                         01            011000000010001
+134     id1_plc135       "Pile of Skulls"                   01            111101110111111
+135     id1_plc136       "Pillar"                           11            010000000000001
+136     id1_plc137       "Pillar"                           11            000001000000000   
+137     id1_plc138       "Pillar"                           11            010000000000001
+138     id1_plc139       "Potted Plant"                     01            010000000010001
+139     id1_plc140       "Reeds"                            11            000000100000000   
+140     id1_plc141       "Table"                            00            000000000000000   
+141     id1_plc142       "Rubble"                           10            000100100110100   
+142     id1_plc143       "Rubble"                           11            000000000010000   
+143     id1_plc144       "Rubble"                           10            001100000010000   
+144     id1_plc145       "Rubble"                           10            000000000010000   
+145     id1_plc146       "Rug"                              10            010000000000001
+146     id1_plc147       "Rug"                              10            010000000000001
+147     id1_plc148       "Rug"                              10            000010001000000   
+148     id1_plc149       "Pillar"                           11            001000000010000   
+149     id1_plc150       "Broken Pillar"                    11            001000000010000   
+150     id1_plc151       "Pillar"                           11            000000000010000   
+151     id1_plc152       "Rune Circle"                      10            000001000000000   
+152     id1_plc153       "Rune Stone"                       01            001100100010000   
+153     id1_plc154       "Rune Stone"                       01            001100100010000   
+154     id1_plc155       "Rune Stone"                       01            001100100010000   
+155     id1_plc156       "Sacks"                            00            010000000000001
+156     id1_plc157       "Sarcophagus"                      10            001000000000000   
+157     id1_plc158       "Sarcophagus"                      10            001000000000000   
+158     id1_plc159       "Sarcophagus"                      10            001000000000000   
+159     id1_plc160       "Sheet of Paper"                   01            010010001000001
+160     id1_plc161       "Sheets of Paper"                  01            010010001000001
+161     id1_plc162       "Shrub"                            11            000000100000000   
+162     id1_plc163       "Signpost"                         00            000000000000000   
+163     id1_plc164       "Signpost"                         00            000000000000000   
+164     id1_plc165       "Skulls on Spike"                  11            100101110110100   
+165     id1_plc166       "Small Hole"                       11            100100110100100   
+166     id1_plc167       "Snow Drift"                       11            000000010000000   
+167     id1_plc168       "Spiderweb Cocoon"                 11            101100110111100   
+168     id1_plc169       "Statue"                           11            010000000010001
+169     id1_plc170       "Statue"                           11            010000000010001
+170     id1_plc171       "Statue"                           11            010000000010001
+171     id1_plc172       "Statue"                           10            011101000010011
+172     id1_plc173       "Statue"                           10            011101000010011
+173     id1_plc174       "Statue"                           10            011110001010101
+174     id1_plc175       "Stone Circle"                     10            010000100000001
+175     id1_plc176       "Stone Patch"                      11            011011001011011
+176     id1_plc177       "Stones"                           11            000100100110100   
+177     id1_plc178       "Sword-filled Corpse"              10            011100110010001
+178     id1_plc179       "Table"                            00            000000000000000   
+179     id1_plc180       "Tomb"                             10            001000000000000   
+180     id1_plc181       "Pile of Tomes"                    01            010010001000001
+181     id1_plc182       "Torture Device"                   10            001001000000000   
+182     id1_plc183       "Dead Tree"                        10            000000100000000   
+183     id1_plc184       "Urn"                              01            010000000010001
+184     id1_plc185       "Large Vase"                       01            010000000010001
+185     id1_plc186       "Water Drip"                       11            000000000101000   
+186     id1_plc187       "Well"                             10            000100100110000   
+187     id1_plc188       "Wizard's Table"                   01            010010001000001
+188     id1_plc189       "Woodpile"                         11            000000100000000   
+189        **** WARNING: EDITING ENTRIES BEFORE THIS LINE CAN CAUSE THE MODULE TO MALFUNCTION. ****

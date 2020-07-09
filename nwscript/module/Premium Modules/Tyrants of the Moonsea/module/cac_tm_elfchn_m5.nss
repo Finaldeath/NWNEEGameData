@@ -1,0 +1,14 @@
+//::////////////////////////////////////////////////////
+//:: MODULE: Tyrants of the Moonsea
+//:: NOTE: Quest script for "Elf In Chains" Quest
+//::////////////////////////////////////////////////////
+//:: PC knows the price for all slaves
+//::////////////////////////////////////////////////////
+
+#include "hf_in_plot"
+
+void main()
+{
+    object oPC = GetPCSpeaker();
+    AddJournalQuestEntry("ElfinChains", 3, oPC);
+}

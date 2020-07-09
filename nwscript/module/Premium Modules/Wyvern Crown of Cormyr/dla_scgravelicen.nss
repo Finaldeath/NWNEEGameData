@@ -1,0 +1,18 @@
+//::///////////////////////////////////////////////
+//:: FileName dla_scgravelicen
+//:: DragonLance Adventures (DLA)
+//:://////////////////////////////////////////////
+//
+//
+//
+//:://////////////////////////////////////////////
+//:: Created By: B G P Hughes
+//:: Created On: 02/01/2006 14:50:12
+//:://////////////////////////////////////////////
+#include "nw_i0_tool"
+
+int StartingConditional()
+{
+    // Make sure the PC speaker has these items in their inventory
+    return HasItem(GetPCSpeaker(), "Licence");
+}

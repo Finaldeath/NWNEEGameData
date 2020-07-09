@@ -1,0 +1,16 @@
+//::///////////////////////////////////////////////
+//:: FileName sc_001
+//:: DragonLance Adventures (DLA)
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: B G P Hughes
+//:: Created On: 29/10/2005 15:07:34
+//:://////////////////////////////////////////////
+#include "nw_i0_tool"
+
+int StartingConditional()
+{
+
+    // Make sure the PC speaker has these items in their inventory
+    return HasItem(GetPCSpeaker(), "Shard");
+}

@@ -1,0 +1,23 @@
+//::////////////////////////////////////////////////////////////////////////////
+//:: pus_puz_switch.
+//:: Copyright (c) 2005 Bioware Corp.
+//::////////////////////////////////////////////////////////////////////////////
+/*
+    Placeable On Used script for the switch placeables in the Rune Circle
+    puzzle. When used these switches swap the colors of the two adjacent runes.
+*/
+//::////////////////////////////////////////////////////////////////////////////
+//:: Created By: Grant Mackay
+//:: Created On: July 25, 2005
+//::////////////////////////////////////////////////////////////////////////////
+
+#include "inc_puz_rncrcl"
+
+void main()
+{
+    DebugMessage("On Used: " + GetTag(OBJECT_SELF));
+
+    object oPC = GetLastUsedBy();
+
+    SwapRuneColors(oPC);
+}

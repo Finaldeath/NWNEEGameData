@@ -1,0 +1,7 @@
+2DA V2.0
+
+      Name_Singular             ResRef          Class          Spellcaster
+0     "Bugbear Rogue"           id_bugbear008   8              ****
+1     "Bugbear Fighter"         id_bugbear012   4              ****
+2     "Bugbear Cleric"          id_bugbear002   2              1
+3     "Bugbear Wizard"          id_bugbear010   10             1

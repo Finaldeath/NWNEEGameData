@@ -1,0 +1,19 @@
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+// MODULE: Tyrants of the Moonsea
+// NAME: con_tm_onehand6
+// DATE: February 27, 2006.
+// AUTH: Luke Scull
+// NOTE: Appears when player speaks to Onehand in the
+//       Arena.
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+int StartingConditional()
+{
+
+    // Inspect local variables
+    if(!(GetLocalInt(GetPCSpeaker(), "arena") == 1))
+        return FALSE;
+
+    return TRUE;
+}

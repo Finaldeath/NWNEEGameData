@@ -1,0 +1,21 @@
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+// MODULE: Tyrants of the Moonsea
+// NAME: con_tm_innovate9
+// DATE: March 18, 2006.
+// AUTH: Luke Scull
+// NOTE: Appears when player killed Blizzard in Pit.
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+int StartingConditional()
+{
+object oPC = GetPCSpeaker();
+
+int nInt;
+nInt=GetLocalInt(oPC, "NW_JOURNAL_ENTRYHillsfarArenaBlizzard");
+
+if (!(nInt == 30))
+   return FALSE;
+
+return TRUE;
+}

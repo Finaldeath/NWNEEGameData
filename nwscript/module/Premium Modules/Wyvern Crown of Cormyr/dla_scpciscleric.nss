@@ -1,0 +1,16 @@
+//::///////////////////////////////////////////////
+//:: FileName dla_scpciscleric
+//:: DragonLance Adventures (DLA)
+//:://////////////////////////////////////////////
+//
+// Returns TRUE if PC is a cleric
+//
+//:://////////////////////////////////////////////
+//:: Created By: B G P Hughes
+//:: Created On: 09/01/2006 23:14:47
+//:://////////////////////////////////////////////
+int StartingConditional()
+{
+    // Restrict based on the player's class
+    return GetLevelByClass(CLASS_TYPE_CLERIC, GetPCSpeaker()) >= 1;
+}

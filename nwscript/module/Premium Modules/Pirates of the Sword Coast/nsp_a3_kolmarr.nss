@@ -1,0 +1,18 @@
+//::///////////////////////////////////////////////
+//:: nsp_a3_kolmarr
+//:: Copyright (c) 2004 Bioware Corp.
+//:://////////////////////////////////////////////
+/*
+    Kolmarr's Spawn event.
+*/
+//:://////////////////////////////////////////////
+//:: Created By: Keith K2 Hayward
+//:: Created On: July, 2004
+//:://////////////////////////////////////////////
+#include "inc_balance"
+
+void main()
+{
+    SetIsDestroyable(FALSE, FALSE, FALSE);
+    ExecuteScript("nw_c2_default9", OBJECT_SELF);
+}

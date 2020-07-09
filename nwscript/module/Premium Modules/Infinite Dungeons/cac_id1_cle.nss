@@ -1,0 +1,33 @@
+#include "inc_id1_flags"
+#include "inc_id1_text"
+
+void main()
+{
+    string sString = "";
+    int nTemp;
+
+    // get the chance of 1 exit
+    sString += "The proportional chance of a one-exit area is ";
+    nTemp = GetModuleFlagValue(ID1_FLAG_DUNGEON_ONE_EXIT);
+    sString += IntToString(nTemp) + ".";
+    sString = AddLineBreak(sString);
+
+    // get the chance of 2 exit
+    sString += "The proportional chance of a two-exit area is ";
+    nTemp = GetModuleFlagValue(ID1_FLAG_DUNGEON_TWO_EXIT);
+    sString += IntToString(nTemp) + ".";
+    sString = AddLineBreak(sString);
+
+    // get the chance of 3 exit
+    sString += "The proportional chance of a three-exit area is ";
+    nTemp = GetModuleFlagValue(ID1_FLAG_DUNGEON_THREE_EXIT);
+    sString += IntToString(nTemp) + ".";
+    sString = AddLineBreak(sString);
+
+    // get the chance of 4 exit
+    sString += "The proportional chance of a four-exit area is ";
+    nTemp = GetModuleFlagValue(ID1_FLAG_DUNGEON_FOUR_EXIT);
+    sString += IntToString(nTemp) + ".";
+
+    SetCustomToken(5100, sString);
+}

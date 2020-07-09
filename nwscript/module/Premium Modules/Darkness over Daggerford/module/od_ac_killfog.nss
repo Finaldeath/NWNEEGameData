@@ -1,0 +1,17 @@
+//::///////////////////////////////////////////////
+//:: Name od_ac_killfog
+//:: Copyright (c) 2001 Bioware Corp.
+//:://////////////////////////////////////////////
+/*
+    Dragon OnDeath script
+*/
+//:://////////////////////////////////////////////
+//:: Created By: Keith Warner
+//:: Created On: June 11/03
+//:://////////////////////////////////////////////
+
+void main()
+{
+    DestroyObject(GetNearestObjectByTag("am_fog_large"));
+    ExecuteScript("nw_c2_default7", OBJECT_SELF);
+}

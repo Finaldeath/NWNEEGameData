@@ -1,0 +1,19 @@
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+// MODULE: Tyrants of the Moonsea
+// NAME: cac_tm_innovate3
+// DATE: February 21, 2006.
+// AUTH: Luke Scull
+// NOTE: Appears when player has just left cell after
+//       1st fight in Arena.
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+int StartingConditional()
+{
+
+    // Inspect local variables
+    if(!(GetLocalInt(GetPCSpeaker(), "arena") == 1))
+        return FALSE;
+
+    return TRUE;
+}

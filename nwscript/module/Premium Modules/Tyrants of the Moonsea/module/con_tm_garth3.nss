@@ -1,0 +1,19 @@
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+// MODULE: Tyrants of the Moonsea
+// NAME: con_tm_garth3
+// DATE: April 1, 2006
+// AUTH: Luke Scull
+// NOTE: Appears when player meets Garth in the Pit
+//       for the last time.
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+int StartingConditional()
+{
+
+    // Inspect local variables
+    if(!(GetLocalInt(GetPCSpeaker(), "innovator") == 6))
+        return FALSE;
+
+    return TRUE;
+}

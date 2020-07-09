@@ -1,0 +1,17 @@
+2DA V2.0
+
+           Label         StartState    AdjArea_North     AdjArea_South     AdjArea_East      AdjArea_West      Exit_North            Exit_South            Exit_East             Exit_West
+1          c1ar0500      2             ****              c1ar0800          ****              c1ar0700          ****                  ar0500_ar0800_exit    ****                  ar0500_ar0700_exit
+2          c1ar0700      2             ****              c1ar1000          c1ar0500          ****              ****                  ar0700_ar1000_exit    ar0700_ar0500_exit    ****
+3          c1ar0800      2             ****              c1ar1100          ****              c1ar0500          ****                  ar0800_ar1100_exit    ****                  ar0800_ar0500_exit
+4          c1ar0900      0             c1ar0700          c1ar1500          c1ar1000          c1ar1800          ar0900_ar0700_exit    ar0900_ar1500_exit    ar0900_ar1000_exit    ar0900_ar1800_exit
+5          c1ar1000      0             c1ar0700          c1ar1300          c1ar1100          c1ar0900          ar1000_ar0700_exit    ar1000_ar1300_exit    ar1000_ar1100_exit    ar1000_ar0900_exit
+6          c1ar1100      0             c1ar0800          c1ar1400          ****              c1ar1000          ar1100_ar0800_exit    ar1100_ar1400_exit    ****                  ar1100_ar1000_exit
+7          c1ar1300      0             c1ar1000          ****              c1ar1400          c1ar1500          ar1300_ar1000_exit    ****                  ar1300_ar1400_exit    ar1300_ar1500_exit
+8          c1ar1400      0             c1ar1100          ****              ****              c1ar1300          ar1400_ar1100_exit    ****                  ****                  ar1400_ar1300_exit
+9          c1ar1500      0             c1ar0900          c1ar2200          c1ar1300          c1ar2000          ar1500_ar0900_exit    ar1500_ar2200_exit    ar1500_ar1300_exit    ar1500_ar2000_exit
+10         c1ar1800      0             ****              c1ar1900          c1ar0900          ****              ****                  ar1800_ar1900_exit    ar1800_ar0900_exit    ****
+11         c1ar1900      0             c1ar1800          ****              ****              ****              ar1900_ar1800_exit    ****                  ****                  ****
+12         c1ar2000      0             ****              c1ar2100          c1ar1500          ****              ****                  ar2000_ar2100_exit    ar2000_ar1500_exit    ****
+13         c1ar2100      0             c1ar2000          ****              c1ar2200          ****              ar2100_ar2000_exit    ****                  ar2100_ar2200_exit    ****
+14         c1ar2200      0             c1ar1500          ****              ****              c1ar2100          ar2200_ar1500_exit    ****                  ****                  ar2200_ar2100_exit

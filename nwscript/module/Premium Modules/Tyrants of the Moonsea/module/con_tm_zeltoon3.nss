@@ -1,0 +1,18 @@
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+// MODULE: Tyrants of the Moonsea
+// NAME: con_tm_zeltoon3
+// DATE: January 1, 2006
+// AUTH: Luke Scull
+// NOTE: Appears if PC has spoken to Zeltoon before.
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+int StartingConditional()
+{
+
+    // Inspect local variables
+    if(!(GetLocalInt(GetPCSpeaker(), "zeltoonspoke") == 1))
+        return FALSE;
+
+    return TRUE;
+}

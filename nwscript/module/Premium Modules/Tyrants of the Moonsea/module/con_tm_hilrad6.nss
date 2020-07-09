@@ -1,0 +1,18 @@
+//::///////////////////////////////////////////////
+//:: FileName con_tm_hilrad6
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: Script Wizard
+//:: Created On: 28/06/2006 23:50:47
+//:://////////////////////////////////////////////
+#include "nw_i0_tool"
+
+int StartingConditional()
+{
+
+	// Make sure the PC speaker has these items in their inventory
+	if(!HasItem(GetPCSpeaker(), "Dominion"))
+		return FALSE;
+
+	return TRUE;
+}

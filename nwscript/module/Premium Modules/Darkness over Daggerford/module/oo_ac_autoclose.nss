@@ -1,0 +1,11 @@
+//::///////////////////////////////////////////////
+//:: FileName oo_ac_autoclose
+//:: Door autocloses after 3 seconds
+//:://////////////////////////////////////////////
+//:: Created By: Anya Clancy
+//:: Created On: 10/29/2005 10:51:56 PM
+//:://////////////////////////////////////////////
+void main()
+{
+    DelayCommand(3.0,ActionCloseDoor(OBJECT_SELF));
+}

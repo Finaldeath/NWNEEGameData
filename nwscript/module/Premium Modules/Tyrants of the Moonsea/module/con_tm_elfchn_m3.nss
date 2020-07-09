@@ -1,0 +1,13 @@
+//::////////////////////////////////////////////////////
+//:: MODULE: Tyrants of the Moonsea
+//:: NOTE: Quest script fo "Elf In Chains" Quest
+//::////////////////////////////////////////////////////
+//:: Ilandra's distraction is in progress
+//::////////////////////////////////////////////////////
+
+#include "hf_in_plot"
+
+int StartingConditional()
+{
+    return (PlotLevelCheckEquals("ElfInChains-Status", 3));
+}

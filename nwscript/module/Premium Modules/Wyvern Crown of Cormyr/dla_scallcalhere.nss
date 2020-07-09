@@ -1,0 +1,17 @@
+//::///////////////////////////////////////////////
+//:: FileName dla_scallcalhere
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: BGPHughes
+//:: Created On: 14/08/2006 08:29:08
+//:: Script fires if Caladnei has arrived
+//:://////////////////////////////////////////////
+int StartingConditional()
+{
+
+    // Inspect local variables
+    if(!(GetLocalInt(GetPCSpeaker(), "n7Done") > 0))
+        return FALSE;
+
+    return TRUE;
+}

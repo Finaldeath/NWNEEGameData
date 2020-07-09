@@ -1,0 +1,265 @@
+2DA V2.0
+
+      Name_Singular                Name_Plural                   ResRef              MinCR    MaxCR    Class    ClassStartHD    Attributes    Themes
+0     "Dwarf"                      "Dwarves"                     SubTypeDwarf        1/2      99       ****     1               11111111      0101000010000000
+1     "Drow"                       "Drow"                        SubTypeDrow         1/2      99       ****     1               11111111      0001100011000001
+2     "Elf"                        "Elves"                       SubTypeElf          1/2      99       ****     1               11111111      0101100011000000
+3     "Svirfneblin"                "Svirfneblin"                 SubTypeSvirf        1/2      99       ****     1               11111111      0001000010000001
+4     "Gnome"                      "Gnomes"                      SubTypeGnome        1/2      99       ****     1               11111111      0101000010000000
+5     "Halfling"                   "Halflings"                   SubTypeHalfling     1/2      99       ****     1               11111111      0101000010000000 
+6     "Half-Elf"                   "Half-Elves"                  SubTypeHalfElf      1/2      99       ****     1               11111111      0101000011000000 
+7     "Half-Orc"                   "Half-Orcs"                   SubTypeHalfOrc      1/2      99       ****     1               11111111      0101000010000000 
+8     "Human"                      "Humans"                      SubTypeHuman        1/2      99       ****     1               11111111      0101000010000000 
+9     "Ettercap"                   "Ettercaps"                   id_ettercap         5        7        ****     ****            10011100      1000000000100001 
+10    "Drider"                     "Driders"                     SubTypeDrider       6        99       ****     7               01111111      0000100001100001 
+11    "Mind Flayer"                "Mind Flayers"                SubTypeMindFlay     9        99       9        8               11111111      0000000000000001
+12    "Will-O'-Wisp"               "Will-O'-Wisps"               id_willowisp        8        16       ****     ****            10000000      0000000000000110 
+13    "Umber Hulk"                 "Umber Hulks"                 id_umberhulk        9        12       ****     ****            00011100      1000000000100001 
+14    "Beholder"                   "Beholders"                   id_beholder         13       16       ****     11              01111100      1010000000000001 
+15    "Dire Rat"                   "Dire Rats"                   id_direrat          1/4      2        ****     ****            10000000      0000100100010000 
+16    "Dire Badger"                "Dire Badgers"                id_direbadg         3        3        ****     ****            10000000      0000100000010000 
+17    "Dire Boar"                  "Dire Boars"                  id_boardire         5        11       ****     ****            10000000      0000100000010000 
+18    "Dire Wolf"                  "Dire Wolves"                 id_direwolf         5        12       ****     ****            10000000      0000100000010000 
+19    "Dire Bear"                  "Dire Bears"                  id_beardire         9        11       ****     ****            10000000      0000100000010000 
+20    "Dire Tiger"                 "Dire Tigers"                 id_diretiger        11       20       ****     ****            10000000      0000100000010000 
+21    "Black Bear"                 "Black Bears"                 id_bearblck         2        3        ****     ****            10000000      0000100000010000 
+22    "Brown Bear"                 "Brown Bears"                 id_bearbrwn         5        6        ****     ****            10000000      0000100000010000 
+23    "Grizzly Bear"               "Grizzly Bears"               id_bearkodiak       6        8        ****     ****            10000000      0000100000010000 
+24    "Polar Bear"                 "Polar Bears"                 id_bearpolar        6        8        ****     ****            10000000      0000100000010000 
+25    "Dog"                        "Dogs"                        id_dog              1        1        ****     ****            10000000      0000100000010000 
+26    "Pack Leader"                "Pack Leaders"                id_wolfdireboss     11       14       ****     ****            10000000      0000100000010000 
+27    "Wolf"                       "Wolves"                      id_wolf             1        3        ****     ****            10000000      0000100000010000 
+28    "Cougar"                     "Cougars"                     id_cougar           2        3        ****     ****            10000000      0000100000010000 
+29    "Crag Cat"                   "Crag Cats"                   id_cragcat          2        4        ****     ****            10000000      0000100000010000 
+30    "Jaguar"                     "Jaguars"                     id_jaguar           3        5        ****     ****            10000000      0000100000010000 
+31    "Leopard"                    "Leopards"                    id_leopard          2        4        ****     ****            10000000      0000100000010000 
+32    "Lion"                       "Lions"                       id_lion             3        6        ****     ****            10000000      0000100000010000 
+33    "Panther"                    "Panthers"                    id_panther          2        4        ****     ****            10000000      0000100000010000 
+34    "Gray Render"                "Gray Renders"                id_grayrend         8        11       ****     ****            00011100      1000000000000001 
+35    "Flesh Golem"                "Flesh Golems"                id_golflesh         8        15       ****     ****            00011100      0000000001000010 
+36    "Clay Golem"                 "Clay Golems"                 id_golclay          10       14       ****     ****            00011100      0000000001000000
+37    "Stone Golem"                "Stone Golems"                id_golstone         12       17       ****     ****            00011100      0000000001000000
+38    "Shield Guardian"            "Shield Guardians"            id_shguard          13       19       ****     ****            00011100      0000000001000000
+39    "Iron Golem"                 "Iron Golems"                 id_goliron          16       20       ****     ****            00011100      0000000001000000
+40    "White Dragon"               "White Dragons"               id_adtdrgwhite      9        13       ****     ****            01111100      0000001000001000
+41    "Black Dragon"               "Black Dragons"               id_adtdrgblack      9        13       ****     ****            01111100      0000001000001000
+42    "Blue Dragon"                "Blue Dragons"                id_adtdrgblue       11       15       ****     ****            01111100      0000001000001000
+43    "Green Dragon"               "Green Dragons"               id_adtdrggreen      10       14       ****     ****            01111100      0000001000001000
+44    "Red Dragon"                 "Red Dragons"                 id_adtdrgred        12       16       ****     ****            01111100      0000001000001000
+45    "Old White Dragon"           "Old White Dragons"           id_olddrgwhite      14       18       ****     ****            01111100      0000001000001000
+46    "Old Black Dragon"           "Old Black Dragons"           id_olddrgblack      15       19       ****     ****            01111100      0000001000001000
+47    "Old Blue Dragon"            "Old Blue Dragons"            id_olddrgblue       17       21       ****     ****            01111100      0000001000001000
+48    "Old Green Dragon"           "Old Green Dragons"           id_olddrggreen      16       20       ****     ****            01111100      0000001000001000
+49    "Old Red Dragon"             "Old Red Dragons"             id_olddrgred        18       22       ****     ****            01111100      0000001000001000
+50    "White Great Wyrm"           "White Great Wyrms"           id_ancdrgwhite      20       99       9        30              01111100      0000001000001000
+51    "Black Great Wyrm"           "Black Great Wyrms"           id_ancdrgblack      22       99       9        31              01111100      0000001000001000
+52    "Green Great Wyrm"           "Green Great Wyrms"           id_ancdrggreen      23       99       9        32              01111100      0000001000001000
+53    "Blue Great Wyrm"            "Blue Great Wyrms"            id_ancdrgblue       23       99       9        33              01111100      0000001000001000
+54    "Red Great Wyrm"             "Red Great Wyrms"             id_ancdrgred        25       99       9        34              01111100      0000001000001000
+55    "Goblin"                     "Goblins"                     SubTypeGoblin       1/4      99       ****     1            11111111      0000000110000000
+56    "Hobgoblin"                  "Hobgoblins"                  SubTypeHobgoblin    1/4      99       ****     1            11111111      0000000010000000
+57    "Gnoll"                      "Gnolls"                      SubTypeGnoll        1        36       ****     1            11111111      0000000010000000
+58    "Bugbear"                    "Bugbears"                    SubTypeBugbear      2        99       ****     2            11011111      0000000110000000
+59    "Sea Hag"                    "Sea Hags"                    id_seahag           4        99       10       3               11111110      1000100110000000
+60    "Harpy"                      "Harpies"                     id_harpy            4        99       10       7               11011110      1000100000010000
+61    "Minotaur"                   "Minotaurs"                   id_minotaur         4        99       1        6               11011110      1000100000010001
+62    "Medusa"                     "Medusae"                     id_medusa           6        99       10       6               11111110      1000100000011001
+63    "Orc"                        "Orcs"                        SubTypeOrc          1/2      35       ****     1            11111111      0000000110000000
+64    "Kobold"                     "Kobolds"                     SubTypeKobold       1/4      99       ****     1            11111111      0000001010001000
+65    "LizardFolk"                 "LizardFolk"                  SubTypeLizardFlk    1        99       ****     1            11111111      0000000010001000
+66    "Troglodyte"                 "Troglodytes"                 SubTypeTrog         2        99       ****     1            11111111      0000000010001001
+67    "Yuan-ti"                    "Yuan-ti"                     SubTypeYuanti       5        99       ****     1            11111111      0000000010001000
+68    "Fire Elemental"             "Fire Elementals"             id_fire             3        10       ****     ****            00000000      0001000001000000
+69    "Air Elemental"              "Air Elementals"              id_air              4        12       ****     ****            00000000      0001000001000000
+70    "Earth Elemental"            "Earth Elementals"            id_earth            4        10       ****     ****            00000000      0001000001000001
+71    "Water Elemental"            "Water Elementals"            id_water            4        10       ****     ****            00000000      0001000001000000
+72    "Invisible Stalker"          "Invisible Stalkers"          id_invstalk         6        9        ****     ****            00000000      0001000001000000
+73    "Huge Earth Elemental"       "Huge Earth Elementals"       id_earthhuge        11       14       ****     ****            00000000      0001000001000001
+74    "Huge Water Elemental"       "Huge Water Elementals"       id_waterhuge        11       14       ****     ****            00000000      0001000001000000
+75    "Huge Fire Elemental"        "Huge Fire Elementals"        id_firehuge         12       14       ****     ****            00000000      0001000001000000
+76    "Huge Air Elemental"         "Huge Air Elementals"         id_airhuge          13       17       ****     ****            00000000      0001000001000000
+77    "Greater Water Elemental"    "Greater Water Elementals"    id_watergreat       14       16       ****     ****            00000000      0001000001000000
+78    "Greater Earth Elemental"    "Greater Earth Elementals"    id_earthgreat       15       16       ****     ****            00000000      0001000001000001
+79    "Greater Fire Elemental"     "Greater Fire Elementals"     id_firegreat        15       17       ****     ****            00000000      0001000001000000
+80    "Greater Air Elemental"      "Greater Air Elementals"      id_airgreat         18       19       ****     ****            00000000      0001000001000000
+81    "Elder Water Elemental"      "Elder Water Elementals"      id_watelder         16       99       ****     ****            00000000      0001000001000000
+82    "Elder Earth Elemental"      "Elder Earth Elementals"      id_eartheld         17       99       ****     ****            00000000      0001000001000001
+83    "Elder Fire Elemental"       "Elder Fire Elementals"       id_fireelder        17       99       ****     ****            00000000      0001000001000000
+84    "Elder Air Elemental"        "Elder Air Elementals"        id_airelder         20       99       ****     ****            00000000      0001000001000000
+85    "Dryad"                      "Dryads"                      id_dryad            2        99       ****     ****            11111110      0000100000000000
+86    "Grig"                       "Grigs"                       id_grig             2        5        ****     ****            11011100      0000100000000000
+87    "Nixie"                      "Nixies"                      id_nixie            1        4        ****     ****            11011100      0000100000000000
+88    "Nymph"                      "Nymphs"                      id_nymph            3        99       ****     ****            11111110      0000100000000000
+89    "Pixie"                      "Pixies"                      id_pixie            2        5        ****     ****            11111110      0000100000000000
+90    "Ogre"                       "Ogres"                       id_ogre             3        99       0        4               11011111      0000000110000000
+91    "Troll"                      "Trolls"                      id_troll            5        99       0        6               11011111      0000000110000000
+92    "Ogre Mage"                  "Ogre Mages"                  id_ogremage         8        99       9        5               11111110      0001000110000000
+93    "Ettin"                      "Ettins"                      id_ettin            8        99       0        10              01011110      0000000100000000
+94    "Hill Giant"                 "Hill Giants"                 id_gnthill          10       99       0        12              01011110      0000000100000000
+95    "Mountain Giant"             "Mountain Giants"             id_gntmount         10       99       0        12              01011111      0000000100000000
+96    "Frost Giant"                "Frost Giants"                SubTypeFrostGnt     10       99       ****     4            01111111      0000000100000000
+97    "Fire Giant"                 "Fire Giants"                 SubTypeFireGnt      12       99       ****     4            01111111      0000000100000000
+98    "Stirge"                     "Stirge"                      id_stirge           1/4      1        ****     ****            10000000      0000100000010000
+99    "Krenshar"                   "Krenshar"                    id_krenshar         2        3        ****     ****            10000000      0000100000010001
+100   "Gargoyle"                   "Gargoyles"                   id_gargoyle         3        4        ****     ****            10011100      1000000001000000
+101   "Worg"                       "Worgs"                       id_worg             3        4        ****     ****            10000000      0000100100010000
+102   "Phase Spider"               "Phase Spiders"               id_spidphase        3        5        ****     ****            00000000      0000000000100000
+103   "Cockatrice"                 "Cockatrice"                  id_cockatrice       5        7        ****     ****            10000000      1000000000000000
+104   "Basilisk"                   "Basilisks"                   id_basilisk         5        8        ****     ****            00000000      1000000000001000
+105   "Winter Wolf"                "Winter Wolves"               id_wolfwint         5        7        ****     ****            10000000      0000100000010000
+106   "Manticore"                  "Manticores"                  id_manticore        6        12       ****     ****            00011100      1000000000000000
+107   "Gorgon"                     "Gorgons"                     id_gorgon           7        11       ****     ****            00011100      1000000000000000
+108   "Tiefling"                   "Tieflings"                   SubTypeTiefling     1/2      99       ****     1            11111111      0001010010000000
+109   "Azer"                       "Azer"                        SubTypeAzer         2        99       ****     3            11111110      0000010010000000
+110   "Imp"                        "Imps"                        id_imp              3        5        ****     ****            11111100      0001010001000000
+111   "Quasit"                     "Quasits"                     id_quasit           3        6        ****     ****            11111100      0001010001000000
+112   "Air Mephit"                 "Air Mephits"                 id_mepair           3        5        ****     ****            11111100      0001010001000000
+113   "Dust Mephit"                "Dust Mephits"                id_mepdust          3        5        ****     ****            11111100      0001010001000000
+114   "Earth Mephit"               "Earth Mephits"               id_mepearth         3        5        ****     ****            11111100      0001010001000000
+115   "Fire Mephit"                "Fire Mephits"                id_mepfire          3        5        ****     ****            11111100      0001010001000000
+116   "Ice Mephit"                 "Ice Mephits"                 id_mepice           3        5        ****     ****            11111100      0001010001000000
+117   "Magma Mephit"               "Magma Mephits"               id_mepmagma         3        5        ****     ****            11111100      0001010001000000
+118   "Ooze Mephit"                "Ooze Mephits"                id_mepooze          3        5        ****     ****            11111100      0001010001000000
+119   "Salt Mephit"                "Salt Mephits"                id_mepsalt          3        5        ****     ****            11111100      0001010001000000
+120   "Steam Mephit"               "Steam Mephits"               id_mepsteam         3        5        ****     ****            11111100      0001010001000000
+121   "Water Mephit"               "Water Mephits"               id_mepwater         3        5        ****     ****            11111100      0001010001000000
+122   "Hell Hound"                 "Hell Hounds"                 id_hellhound        4        6        ****     ****            10000000      0001110000010000
+123   "Shadow Mastiff"             "Shadow Mastiffs"             id_shmastif         4        6        ****     ****            10000000      0001110000010001
+124   "Red Slaad"                  "Red Slaadi"                  id_slaadred         6        8        ****     ****            11100000      0000010000000000
+125   "Succubus"                   "Succubi"                     id_succubus         7        11       ****     ****            11111100      0001010000000000
+126   "Rakshasa"                   "Rakshasa"                    id_rakshasa         7        12       ****     ****            11111100      0001010000000000
+127   "Blue Slaad"                 "Blue Slaadi"                 id_slaadbl          7        10       ****     ****            11100000      0000010000000000
+128   "Green Slaad"                "Green Slaadi"                id_slaadgrn         9        13       ****     ****            11100000      0000010000000000
+129   "Gray Slaad"                 "Gray Slaadi"                 id_slaadgray        10       14       ****     ****            11100000      0000010000000000
+130   "Vrock"                      "Vrocks"                      id_vrock            10       14       ****     ****            11111100      0001010000000000
+131   "Bebilith"                   "Bebiliths"                   id_bebilith         12       16       ****     ****            01011100      0001010000000000
+132   "Balor"                      "Balors"                      id_demon            15       21       ****     ****            01111100      0001010000000000
+133   "Pit Fiend"                  "Pit Fiends"                  id_pitfiend         15       21       ****     ****            01111100      0001010000000000
+134   "Death Slaad"                "Death Slaadi"                id_slaaddeath       15       21       ****     ****            11100000      0000010000000000
+135   "White Slaad"                "White Slaadi"                id_slaadwhite       25       34       ****     ****            11100000      0000010000000000
+136   "Black Slaad"                "Black Slaadi"                id_slaadblack       30       99       ****     ****            11100000      0000010000000000
+137   "Formian Worker"             "Formian Workers"             id_form_worker      1        2        ****     ****            10011100      0000000000100001
+138   "Formian Warrior"            "Formian Warriors"            id_form_warrior     4        7        ****     ****            11011110      0000000000100001
+139   "Formian Taskmaster"         "Formian Taskmasters"         id_form_taskmast    7        12       ****     ****            11011110      0000000000100001
+140   "Formian Myrmarch"           "Formian Myrmarchs"           id_form_myrmarch    11       15       ****     ****            11111110      0000000000100001
+141   "Formian Queen"              "Formian Queens"              id_form_queen       18       23       9        20              11111100      0000000000100001
+142   "Aranea"                     "Araneae"                     id_aranea           4        99       9        3               01011100      0000000000100000
+143   "Malar Panther"              "Malar Panthers"              id_beastmalar       7        10       ****     ****            10000000      0000000000010000
+144   "Werecat"                    "Werecats"                    id_werecat          5        99       ****     ****            11011100      0000000000010000
+145   "Wererat"                    "Wererats"                    id_wererat          2        99       ****     ****            11011100      0000000000010000
+146   "Werewolf"                   "Werewolves"                  id_werewolf         3        99       ****     ****            11011100      0000000000010000
+147   "Skeleton"                   "Skeletons"                   id_skeleton         1/2      1        ****     ****            10011110      0000000000000100
+148   "Zombie"                     "Zombies"                     id_zombie           1        2        ****     ****            10011110      0000000000000010
+149   "Ghoul"                      "Ghouls"                      id_ghoul            2        3        ****     ****            10011100      0000000000000010 
+150   "Allip"                      "Allips"                      id_allip            3        10       ****     ****            10000000      0000000000000110
+151   "Shadow"                     "Shadows"                     id_shadow           3        8        ****     ****            10000000      0000000000000110
+152   "Wight"                      "Wights"                      id_wight            4        7        ****     ****            10100000      0000000000000010
+153   "Ghast"                      "Ghasts"                      id_ghast            4        6        ****     ****            10011100      0000000000000010
+154   "Wraith Spider"              "Wraith Spiders"              id_spidwraith       4        6        ****     ****            00000000      0000000000100110
+155   "Wraith"                     "Wraiths"                     id_wraith           5        9        ****     ****            10000000      0000000000000110
+156   "Mummy"                      "Mummies"                     id_mummy            5        9        ****     ****            10011100      0000000000000100
+157   "Spectre"                    "Spectres"                    id_spectre          6        12       ****     ****            10000000      0000000000000110
+158   "Bodak"                      "Bodaks"                      id_bodak            9        13       ****     ****            10011100      0000000000000010
+159   "Mohrg"                      "Mohrgs"                      id_mohrg            12       17       ****     ****            10011100      0000000000000100
+160   "Lich"                       "Liches"                      id_lich             17       99       ****     ****            11111100      0000000001000110
+161   "Dracolich"                  "Dracoliches"                 id_dracolich        43       99       ****     ****            01111100      0000001000000110
+162   "Fire Beetle"                "Fire Beetles"                id_btlfire          1/4      2        ****     ****            10000000      0000000000100001
+163   "Stink Beetle"               "Stink Beetles"               id_btlstink         3        5        ****     ****            10000000      0000000000100001
+164   "Spitting Fire Beetle"       "Spitting Fire Beetles"       id_btlfirespt       3        4        ****     ****            10000000      0000000000100001
+165   "Bombardier Beetle"          "Bombardier Beetles"          id_btlbomb          3        4        ****     ****            10000000      0000000000100001
+166   "Stag Beetle"                "Stag Beetles"                id_btlstag          7        9        ****     ****            10000000      0000000000100001
+167   "Hive Mother"                "Hive Mothers"                id_hivemother       9        11       ****     ****            10000000      0000000000100001
+168   "Giant Spider"               "Giant Spiders"               id_spidgiant        3        6        ****     ****            00000000      0000000000100000
+169   "Sword Spider"               "Sword Spiders"               id_spidswrd         4        7        ****     ****            00000000      0000000000100000
+170   "Dire Spider"                "Dire Spiders"                id_spiddire         7        10       ****     ****            00000000      0000000000100000
+171   "Queen Spider"               "Queen Spiders"               id_spiderqueen      14       20       ****     ****            00000000      0000000000100000
+172   "Gelatinous Cube"            "Gelatinous Cubes"            id_gelcube          3        7        ****     ****            00011100      1000000000000001
+173   "Eyeball"                    "Eyeballs"                    id_eyeball          5        7        ****     ****            01000000      1010000000000001
+174   "Immature Beholder"          "Immature Beholders"          id_immbeholder      8        12       ****     ****            01011100      1010000000000001
+175   "Huge Beholder"              "Huge Beholders"              id_hugebeholder     19       30       ****     ****            01011100      1010000000000001
+176   "Beholder Mage"              "Beholder Magi"               id_beholdermage     14       99       10       11              01111100      1010000000000001
+177   "Huge Beholder Mage"         "Huge Beholder Magi"          id_beholdermageh    28       99       10       17              01111100      1010000000000001
+178   "Half-Celestial"             "Half-Celestials"             SubTypeHalfCeles    1        99       ****     1               11111111      1001000010000000
+179   "Half-Fiend"                 "Half-Fiends"                 SubTypeHalfFiend    1        99       ****     1               11111111      1001010010000000
+180   "Half-Dragon"                "Half-Dragons"                SubTypeHalfDrag     1        99       ****     1               11111111      0001001010000000
+181   "Erinyes"                    "Erinyes"                     id_erinyes          6        10       ****     ****               11111111      0001001010000000
+182   "Black Wyrmling"             "Black Wyrmlings"             id_wlgdrgblack      4        8        ****     ****            01011100      0000001000001000
+183   "Blue Wyrmling"              "Blue Wyrmlings"              id_wlgdrgblue       5        9        ****     ****            01011100      0000001000001000
+184   "Green Wyrmling"             "Green Wyrmlings"             id_wlgdrggreen      4        8        ****     ****            01011100      0000001000001000
+185   "Red Wyrmling"               "Red Wyrmlings"               id_wlgdrgred        6        10       ****     ****            01011100      0000001000001000
+186   "White Wyrmling"             "White Wyrmlings"             id_wlgdrgwhite      3        7        ****     ****            01011100      0000001000001000
+187   "Brass Wyrmling"             "Brass Wyrmlings"             id_wlgdrgbrass      5        8        ****     ****            01011100      0000001000001000
+188   "Brass Dragon"               "Brass Dragons"               id_adtdrgbrass      10       14       ****     ****            01111100      0000001000001000
+189   "Old Brass Dragon"           "Old Brass Dragons"           id_olddrgbrass      15       19       ****     ****            01111100      0000001000001000
+190   "Brass Great Wyrm"           "Brass Great Wyrms"           id_ancdrgbrass      21       99       ****     ****            01111100      0000001000001000
+191   "Bronze Wyrmling"            "Bronze Wyrmlings"            id_wlgdrgbronze     6        10       ****     ****            01011100      0000001000001000
+192   "Bronze Dragon"              "Bronze Dragons"              id_adtdrgbronze     11       15       ****     ****            01111100      0000001000001000
+193   "Old Bronze Dragon"          "Old Bronze Dragons"          id_olddrgbronze     17       21       ****     ****            01111100      0000001000001000
+194   "Bronze Great Wyrm"          "Bronze Great Wyrms"          id_ancdrgbronze     23       99       ****     ****            01111100      0000001000001000
+195   "Copper Wyrmling"            "Copper Wyrmlings"            id_wlgdrgcopper     5        9        ****     ****            01011100      0000001000001000
+196   "Copper Dragon"              "Copper Dragons"              id_adtdrgcopper     10       14       ****     ****            01111100      0000001000001000
+197   "Old Copper Dragon"          "Old Copper Dragons"          id_olddrgcopper     16       22       ****     ****            01111100      0000001000001000
+198   "Copper Great Wyrm"          "Copper Great Wyrms"          id_ancdrgcopper     22       99       ****     ****            01111100      0000001000001000
+199   "Gold Wyrmling"              "Gold Wyrmlings"              id_wlgdrggold       7        11       ****     ****            01011100      0000001000001000
+200   "Gold Dragon"                "Gold Dragons"                id_adtdrggold       12       17       ****     ****            01111100      0000001000001000
+201   "Old Gold Dragon"            "Old Gold Dragons"            id_olddrggold       19       23       ****     ****            01111100      0000001000001000
+202   "Gold Great Wyrm"            "Gold Great Wyrms"            id_ancdrggold       25       99       ****     ****            01111100      0000001000001000
+203   "Silver Wyrmling"            "Silver Wyrmlings"            id_wlgdrgsilver     6        10       ****     ****            01011100      0000001000001000
+204   "Silver Dragon"              "Silver Dragons"              id_adtdrgsilver     12       16       ****     ****            01111100      0000001000001000
+205   "Old Silver Dragon"          "Old Silver Dragons"          id_olddrgsilver     18       22       ****     ****            01111100      0000001000001000
+206   "Silver Great Wyrm"          "Silver Great Wyrms"          id_ancdrgsilver     24       99       ****     ****            01111100      0000001000001000
+207   "Prismatic Dragon"           "Prismatic Dragons"           id_adtdrgprismat    28       36       ****     ****            01111100      0000001000001000
+208   "Old Prismatic Dragon"       "Old Prismatic Dragons"       id_olddrgprismat    40       44       ****     ****            01111100      0000001000001000
+209   "Prismatic Great Wyrm"       "Prismatic Great Wyrms"       id_ancdrgprismat    47       99       ****     ****            01111100      0000001000001000
+210   "Faerie Dragon"              "Faerie Dragons"              id_drgfaerie        2        6        ****     ****            01111000      0000001000001000
+211   "Pseudodragon"               "Pseudodragon"                id_pseudodrg        1        3        ****     ****            01011000      0000001000001000
+212   "Large Bombardier Beetle"    "Large Bombardier Beetles"    id_btlbomblg        4        5        ****     ****            10000000      0000000000100001
+213   "Huge Stag Beetle"           "Huge Stag Beetles"           id_btlstaghg        9        16       ****     ****            10000000      0000000000100001
+214   "Adamantine Golem"           "Adamantine Golems"           id_goladam          41       45       ****     ****            00011100      0000000001000000
+215   "Bone Golem"                 "Bone Golems"                 id_golbone          7        12       ****     ****            00011100      0000000001000100
+216   "Huge Clay Golem"            "Huge Clay Golems"            id_golclayhg        15       24       ****     ****            00011100      0000000001000000
+217   "Demonflesh Golem"           "Demonflesh Golems"           id_goldemon         20       34       ****     ****            00011100      0000000001000000
+218   "Helmed Horror"              "Helmed Horrors"              id_helmedhor        10       15       ****     ****            00011110      0000000001000000
+219   "Huge Iron Golem"            "Huge Iron Golems"            id_golironhg        20       38       ****     ****            00011100      0000000001000000
+220   "Minogon"                    "Minogons"                    id_minogon          8        13       ****     ****            00011100      0000000001000000
+221   "Mithril Golem"              "Mithril Golems"              id_golmith          29       40       ****     ****            00011100      0000000001000000
+222   "Huge Shield Guardian"       "Huge Shield Guardians"       id_shguardhg        19       32       ****     ****            00011100      0000000001000000
+223   "Large Gargoyle"             "Large Gargoyles"             id_gargoylelg       9        15       ****     ****            00011100      0000000001000001
+224   "Large Mummy"                "Large Mummies"               id_lgmummy          10       13       ****     ****            10011100      0000000000000100
+225   "Greater Mummy"              "Greater Mummies"             id_grmummy          5        99       2        6               10111100      0000000000000100
+226   "Demilich"                   "Demiliches"                  id_demilich         16       99       10       21              11101000      0000000001000110
+227   "Large Mohrg"                "Large Mohrgs"                id_lgmohrg          18       22       ****     ****            10011100      0000000000000100
+228   "Skeletal Devourer"          "Skeletal Devourers"          id_skeldevour       8        9        ****     ****            10000000      0000000000000100
+229   "Large Skeletal Devourer"    "Large Skeletal Devourers"    id_lgskeldevour     10       12       ****     ****            10000000      0000000000000100
+230   "Large Skeleton"             "Large Skeletons"             id_lgskeleton       2        2        ****     ****            10011110      0000000000000100
+231   "Huge Skeleton"              "Huge Skeletons"              id_hgskeleton       3        4        ****     ****            10011110      0000000000000100
+232   "Baelnorn"                   "Baelnorn"                    id_baelnorn         12       99       2        1               11111100      0000000001000110
+234   "Alhoon"                     "Alhoon"                      id_alhoon           13       99       9        8               11111100      0000000001000110
+235   "Vampire"                    "Vampire"                     SubTypeVampire      3        99       ****     ****            11111110      0000000000000010
+236   "Huge Zombie"                "Huge Zombies"                id_hgzombie         5        14       ****     ****            10011110      0000000000000010
+237   "Large Zombie"               "Large Zombies"               id_lgzombie         3        5        ****     ****            10011110      0000000000000010
+238   "Small Stink Beetle"         "Small Stink Beetles"         id_btlstinksml      2        2        ****     ****            10000000      0000000000100001
+239   "Small Stag Beetle"           Small Stag Beetles"          id_btlstagsml       4        6        ****     ****            10000000      0000000000100001
+240   "Small Skeleton"             "Small Skeletons"             id_skeletonsml      1/2      1/2      ****     ****            10011110      0000000000000100
+241   "Tiny Skeleton"              "Tiny Skeletons"              id_skeletontny      1/4      1/4      ****     ****            10011110      0000000000000100
+242   "Bat"                        "Bats"                        id_bat              1/2      1/2      ****     ****            10000000      1001000010010111
+243   "Small Bat"                  "Small Bats"                  id_batsml           1/4      1/4      ****     ****            10000000      1001000010010111
+244   "Large Bat"                  "Large Bats"                  id_batlrg           1        2        ****     ****            10000000      1001000010010111
+245   "Small Cougar"               "Small Cougars"               id_cougarsml        1/4      1        ****     ****            10000000      0000100000010000
+246   "Small Lion"                 "Small Lions"                 id_lionsml          1        2        ****     ****            10000000      0000100000010000 
+247   "Cat"                        "Cats"                        id_liontny          1/4      1/4      ****     ****            10000000      0000100000010000 
+248   "Small Panther"              "Small Panthers"              id_panthersml       1        1        ****     ****            10000000      0000100000010000 
+249   "Tiny Panther"               "Tiny Panthers"               id_panthertny       1/2      1/2      ****     ****            10000000      0000100000010000 
+250   "Rat"                        "Rats"                        id_rat              1/4      1/4      ****     ****            10000000      1111111111111111
+251   "Blind Eye"                  "Blind Eyes"                  id_blindeye         1/4      5        ****     ****            11000000      1010000000000001
+252   "Sickly Imp"                 "Sickly Imps"                 id_sickimp          1/4      3        ****     ****            11111100      0001010001000000
+253   "Immature Formian"           "Immature Formian"            id_form_immature    1/2      2        ****     ****            10011100      0000000000100001
+254   "Mangy Wererat"              "Mangy Wererats"              id_wererat_mangy    1/2      2        ****     ****            11011100      0000000000010000
+255   "Skeleton Commander"         "Skeleton Commanders"         id_skeleton_comm    1/2      99       ****     ****            11011110      0000000000000100
+256   "Dead Butler"                "Dead Butlers"                id_dead_butler      1/3      3        ****     ****            10011110      0000000000000010
+257   "Legendary Bear"             "Legendary Bears"             id_bearlegend       12       99       ****     ****            10000000      0000100000010000 
+258   "Legendary Wolf"             "Legendary Wolves"            id_wolflegend       13       99       ****     ****            10000000      0000100000010000 
+259   "Legendary Tiger"            "Legendary Tigers"            id_tigerlegend      21       99       ****     ****            10000000      0000100000010000 
+260   "Legendary Boar"             "Legendary Boars"             id_boarlegend       12       99       ****     ****            10000000      0000100000010000 
+261   "Deadly Bombardier Beetle"   "Deadly Bombardier Beetles"   id_btlbomb_d        15       99       ****     ****            10000000      0000000000100001
+262   "Gargoyle Paragon"           "Gargoyle Paragons"           id_gargoyleparag    10       99       ****     ****            10011100      1000000001000000

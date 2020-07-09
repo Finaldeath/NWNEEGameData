@@ -1,0 +1,14 @@
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+// MODULE: Tyrants of the Moonsea
+// NAME: pfp_tm_sidedoor2
+// DATE: August 26, 2005
+// AUTH: Luke Scull
+// NOTE: Pop-up text for Listening Tree doors.
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+void main()
+{
+SpeakString("The door is locked tight. The Listening Tree seems to be closed at the moment, likely because it's such an obvious target for a surprise Order attack.");
+
+}

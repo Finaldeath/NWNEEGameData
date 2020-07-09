@@ -1,0 +1,6 @@
+2DA V2.0
+
+      Name_Singular                          ResRef             Class          Spellcaster
+0     "Troglodyte Barbarian"                 id_troglodyte000   0              ****
+1     "Troglodyte Rogue"                     id_troglodyte008   8              ****
+2     "Troglodyte Cleric"                    id_troglodyte002   2              1

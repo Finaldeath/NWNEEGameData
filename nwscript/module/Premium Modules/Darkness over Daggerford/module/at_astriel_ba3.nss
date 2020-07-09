@@ -1,0 +1,14 @@
+//To be placed as part of the actions taken of the journal giving conv.
+//for the quests given by Astriel in the Chateu Elite
+//since it is only info the PC is looking for then we need to set 'ints'
+//Author: Phil Mitchell (Baron of Gateford)
+void main()
+{
+object oPC = GetPCSpeaker();
+int iJournal = GetLocalInt(GetModule(),"barge_activity");
+if (iJournal == 3)
+    {
+     AddJournalQuestEntry ("barge_activity", 4, oPC, TRUE);
+     SetLocalInt(GetModule(),"barge_activity",4);
+    }
+}

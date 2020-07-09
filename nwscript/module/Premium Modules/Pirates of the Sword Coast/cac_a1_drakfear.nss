@@ -1,0 +1,16 @@
+//::///////////////////////////////////////////////
+//:: cac_a1_drakfear
+//:: Copyright (c) 2004 Bioware Corp.
+//:://////////////////////////////////////////////
+/*
+    The PC has successfully intimidated Drak
+*/
+//:://////////////////////////////////////////////
+//:: Created By: Keith K2 Hayward
+//:: Created On: October, 2004
+//:://////////////////////////////////////////////
+void main()
+{
+    object oDrak = OBJECT_SELF;
+    SetLocalInt(oDrak, "A1_DRAKAFRAID", TRUE);
+}

@@ -1,0 +1,18 @@
+//:://////////////////////////////////////////////
+//:: cac_a0_rhmnky
+//:: Copyright (c) 2004 Bioware Corp.
+//:://////////////////////////////////////////////
+/*
+    The player didn't have a copy of Rahman's key
+    so create another.
+*/
+//:://////////////////////////////////////////////
+//:: Created By: Keith K2 Hayward
+//:: Created On: July, 2004
+//:://////////////////////////////////////////////
+
+void main()
+{
+    object oPC = GetPCSpeaker();
+    CreateItemOnObject("a0_rahmanskey", oPC);
+}

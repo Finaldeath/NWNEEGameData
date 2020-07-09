@@ -1,0 +1,23 @@
+//::////////////////////////////////////////////////////////////////////////////
+//::ndm_id1_elemgrd
+//:: Copyright (c) 2005 Bioware Corp.
+//::////////////////////////////////////////////////////////////////////////////
+/*
+    On Death Event handler for the elemental guardians in Halaster's area.
+*/
+//::////////////////////////////////////////////////////////////////////////////
+//:: Created By: Grant Mackay
+//:: Created On: Dec 5, 2005
+//::////////////////////////////////////////////////////////////////////////////
+void main()
+{
+    // update the elementals source's queue to summon a replacement.
+    object oSource = GetLocalObject(OBJECT_SELF, "oSource");
+
+    int nSummon = GetLocalInt(oSource, "nSummon");
+
+    nSummon++;
+
+    SetLocalInt(oSource, "nSummon", nSummon);
+}
+

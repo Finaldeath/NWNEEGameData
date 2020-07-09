@@ -1,0 +1,23 @@
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+// MODULE: Tyrants of the Moonsea
+// NAME: con_tm_grazsword
+// DATE: November 9, 2005
+// AUTH: Luke Scull
+// NOTE: Appears if player has agreed to fetch
+//       Kazz's sword
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+#include "hf_in_plot"
+
+int StartingConditional()
+{
+    if(PlotLevelGet("Grazkahn") == 2)
+    {
+        return TRUE;
+    }
+    else
+    {
+        return FALSE;
+    }
+}

@@ -1,0 +1,22 @@
+2DA V2.0
+
+     Label      StartState AdjArea_North AdjArea_South AdjArea_East AdjArea_West            Exit_North                     Exit_South                     Exit_East                        Exit_West                        
+0    CormanthOE 0          ****          ****          CormanthGF   ****                    ****                           ****                           WP_Encampment_To_Cormanthor      ****                             
+1    CormanthGF 0          Elventree     ****          ****         CormanthOE              WP_Cormanthor_To_Elventree     ****                           ****                             WP_Cormanthor_To_Encampment      
+2    CormanthRL 0          Elmwood       ****          ****         ****                    WP_River_Lis_To_Elmwood        ****                           ****                             ****                             
+3    Elmwood    0          ****          CormanthRL    ****         Elventree               ****                           WP_Elmwood_To_River_Lis        ****                             WP_Elmwood_To_Elventree          
+4    Elventree  0          ****          CormanthGF    Elmwood      Hillsfar                ****                           WP_Elventree_To_Cormanthor     WP_Elventree_To_Elmwood          WP_Elventree_To_Hillsfar
+5    Hillsfar   0          ****          ShindRdEHF    Elventree    ****                    ****                           ****                           WP_Hillsfar_To_Elventree         WP_Hillsfar_To_NearingHillsfar                            
+6    MelvauntSY 0          ****          ****          ****         ****                    ****                           ****                           ****                             ****                               
+7    MulmasterD 0          ****          ****          ****         ****                    ****                           ****                           ****                             ****                             
+8    ShindRoadE 0          ****          ****          ShindRdENV   Voonlar                 ****                           ****                           WP_ShindRoadEast_To_NarrowValley WP_ShindRoadEast_To_Voonlar      
+9    ShindRdENV 0          ****          ****          ShindRdEOY   ShindRoadE              ****                           ****                           WP_NarrowValley_To_GatesOfYulash WP_NarrowValley_To_ShindRoadEast 
+10   ShindRdEHF 0          ****          ****          Hillsfar     ShindRdEOY              ****                           ****                           WP_NearingHillsfar_To_Hillsfar   WP_NearingHillsfar_To_Yulash     
+11   ShindRdEOY 0          ****          ****          ShindRdEHF   ShindRdENV              ****                           ****                           WP_Yulash_To_NearingHillsfar     WP_GatesOfYulash_To_NarrowValley 
+12   TharIyrath 0          TharKurSMG    TharScar      ****         ****                    WP_Iyrauroth_To_KurTharsu      WP_Iyrauroth_To_ScarredLands   ****                             ****                             
+13   TharKurSMG 0          ****          TharIyrath    ****         ****                    ****                           WP_KurTharsu_To_Iyrauroth      ****                             ****                             
+14   TharScar   0          TharIyrath    ThentiaE      ****         ****                    WP_ScarredLands_To_Iyrauroth   WP_ScarredLands_To_Thentia     ****                             ****                             
+15   ThentiaE   0          TharScar      ****          ****         ****                    WP_Thentia_To_ScarredLands     ****                           ****                             ****                             
+16   Voonlar    2          ****          ****          ShindRoadE   ****                    ****                           ****                           WP_Voonlar_To_ShindRoadEast      ****                             
+17   ZhentilOC  0          ****          ****          ****         ****                    ****                           ****                           ****                             ****                             
+18   TharRA     0          TharScar      ThentiaE      ****         ****                    WP_Thentia_To_ScarredLands     WP_ScarredLands_To_Thentia     ****                             ****

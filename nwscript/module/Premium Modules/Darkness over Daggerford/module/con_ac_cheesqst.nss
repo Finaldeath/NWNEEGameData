@@ -1,0 +1,13 @@
+//::///////////////////////////////////////////////
+//:: FileName con_ac_chesqst1
+//:: Set Cheese quest to started
+//:://////////////////////////////////////////////
+//:: Created By: Alan Tarrant
+//:: Created On: 12/10/2005 2:13:17 PM
+//:://////////////////////////////////////////////
+void main()
+{
+    // Set the variables
+    SetLocalInt(GetPCSpeaker(), "ac_cheese_quest", 1);
+
+}

@@ -1,0 +1,19 @@
+//::///////////////////////////////////////////////
+//:: ndt_potsc_hench
+//:: Copyright (c) 2001 Bioware Corp.
+//:://////////////////////////////////////////////
+/*
+    Custom Death script for PotSC NPC Henchmen.
+*/
+//:://////////////////////////////////////////////
+//:: Created By: Keith Hayward
+//:: Created On: March 2005
+//:://////////////////////////////////////////////
+#include "inc_safehench"
+
+void main()
+{
+    HandleDeath();
+    ExecuteScript("nw_c2_default7", OBJECT_SELF);
+}
+

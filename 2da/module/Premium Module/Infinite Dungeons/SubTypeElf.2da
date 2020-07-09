@@ -1,0 +1,7 @@
+2DA V2.0
+
+      Name_Singular     ResRef      Class          Spellcaster
+0     "Elven Warrior"   id_elf004   4              ****
+1     "Elven Rogue"     id_elf008   8              ****
+2     "Elven Cleric"    id_elf002   2              1
+3     "Elven Wizard"    id_elf010   10             1

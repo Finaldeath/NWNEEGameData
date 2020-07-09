@@ -1,0 +1,18 @@
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+// MODULE: Tyrants of the Moonsea
+// NAME: cac_tm_innovate3
+// DATE: February 21, 2006.
+// AUTH: Luke Scull
+// NOTE: Update journal and set int so that Innovator's
+//       dialogue updates.
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+void main()
+{
+object oPC = GetPCSpeaker();
+
+AddJournalQuestEntry("TheArena", 20, oPC);
+
+SetLocalInt(oPC, "innovator", 1);
+}

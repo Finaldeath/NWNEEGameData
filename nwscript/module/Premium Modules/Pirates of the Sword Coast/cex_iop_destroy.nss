@@ -1,0 +1,18 @@
+//::///////////////////////////////////////////////
+//:: cex_iop_destroy
+//:: Copyright (c) 2001 Bioware Corp.
+//:://////////////////////////////////////////////
+/*
+    Clean up the conversation object once the
+    dialog is complete.
+*/
+//:://////////////////////////////////////////////
+//:: Created By: Keith K2 Hayward
+//:: Created On: March 2005
+//:://////////////////////////////////////////////
+
+void main()
+{
+    object oSelf = OBJECT_SELF;
+    DestroyObject(oSelf, 1.0f);
+}

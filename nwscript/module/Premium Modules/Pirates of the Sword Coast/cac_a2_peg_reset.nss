@@ -1,0 +1,17 @@
+//::///////////////////////////////////////////////
+//:: Act 2: Reset Pegleg to a sober state.
+//:: cac_a2_peg_reset.nss
+//:: Copyright (c) 2001 Bioware Corp.
+//:://////////////////////////////////////////////
+/*
+     Reset Pegleg to a sober state.
+*/
+//:://////////////////////////////////////////////
+//:: Created By: Rob Bartel
+//:: Created On: April 27, 2005
+//:://////////////////////////////////////////////
+
+void main()
+{
+    SetLocalInt(GetModule(), "POTSC_PEGLEG_DRINK", 0);
+}

@@ -1,0 +1,18 @@
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+// MODULE: Tyrants of the Moonsea
+// NAME: con_tm_bennart3
+// DATE: October 16, 2005
+// AUTH: Luke Scull
+// NOTE: Appears if Bennart has been rescued from Locktower.
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+int StartingConditional()
+{
+
+    // Inspect local variables
+    if(!(GetLocalInt(GetPCSpeaker(), "bennartrescued") == 1))
+        return FALSE;
+
+    return TRUE;
+}

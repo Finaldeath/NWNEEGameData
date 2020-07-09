@@ -1,0 +1,16 @@
+// green hag store in AR1801
+
+#include "nw_i0_plot"
+
+void main()
+{
+    object oStore = GetNearestObjectByTag("STO_HAG");
+    if (GetObjectType(oStore) == OBJECT_TYPE_STORE)
+    {
+        gplotAppraiseOpenStore(oStore, GetPCSpeaker());
+    }
+    else
+    {
+        ActionSpeakStringByStrRef(53090, TALKVOLUME_TALK);
+    }
+}

@@ -1,0 +1,7 @@
+2DA V2.0
+
+      Name_Singular      ResRef        Class          Spellcaster
+0     "Vampire Fighter"  id_vamp004    4              ****
+1     "Vampire Rogue"    id_vamp008    8              ****
+2     "Vampire Wizard"   id_vamp010    10             1
+3     "Vampire Cleric"   id_vamp002    2              1

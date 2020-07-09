@@ -1,0 +1,18 @@
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+// MODULE: Tyrants of the Moonsea
+// NAME: con_tm_titys3
+// DATE: February 16, 2005
+// AUTH: Luke Scull
+// NOTE: Appears if player has spoken with Titys before.
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+int StartingConditional()
+{
+
+    // Inspect local variables
+    if(!(GetLocalInt(GetPCSpeaker(), "titysspoke") == 1))
+        return FALSE;
+
+    return TRUE;
+}

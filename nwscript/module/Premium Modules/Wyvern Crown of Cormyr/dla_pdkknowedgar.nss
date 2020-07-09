@@ -1,0 +1,16 @@
+//::///////////////////////////////////////////////
+//:: FileName dla_pdkknowedgar
+//:: DragonLance Adventures (DLA)
+//:://////////////////////////////////////////////
+//
+//  Returns TRUE if PC already found Edgar
+//
+//:://////////////////////////////////////////////
+//:: Created By: Gale
+//:: Created On: 16/07/2006
+//:://////////////////////////////////////////////
+int StartingConditional()
+{
+    // Inspect local variables
+    return (GetLocalInt(GetPCSpeaker(), "nFoundEdgar") == 1);
+}

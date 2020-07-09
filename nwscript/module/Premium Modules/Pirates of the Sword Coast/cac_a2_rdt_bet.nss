@@ -1,0 +1,18 @@
+//::///////////////////////////////////////////////
+//:: con_a2_rdt_bet1
+//:: Copyright (c) 2005 Bioware Corp.
+//:://////////////////////////////////////////////
+/*
+    Set the variable which says that the player
+    has been offered a chance to bet.
+*/
+//:://////////////////////////////////////////////
+//:: Created By: Jonathan Epp
+//:: Created On: March 11/05
+//:://////////////////////////////////////////////
+
+
+void main()
+{
+    SetLocalInt(OBJECT_SELF, "PLAYER_OFFERED_BET", TRUE);
+}

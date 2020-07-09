@@ -1,0 +1,13 @@
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+// MODULE: Tyrants of the Moonsea
+// NAME: pfp_tm_lockfour
+// DATE: August 26, 2005
+// AUTH: Luke Scull
+// NOTE: Pop-up text door leading to Locktower 4th fl.
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+void main()
+{
+SpeakString("The door is locked and seems to be barred from the other side. Evidently the Bron doesn't want anyone in his private chambers while he's incapacitated.");
+}

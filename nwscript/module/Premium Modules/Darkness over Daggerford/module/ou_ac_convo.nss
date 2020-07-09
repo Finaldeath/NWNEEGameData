@@ -1,0 +1,12 @@
+//::///////////////////////////////////////////////
+//:: FileName ou_ac_convo
+//:: Item launches convo when clicked
+//:://////////////////////////////////////////////
+//:: Created By: Anya Clancy
+//:: Created On: 11/15/2005 11:59:20 PM
+//:://////////////////////////////////////////////
+void main()
+{
+object oPC = GetLastUsedBy();
+ActionStartConversation(oPC);
+}

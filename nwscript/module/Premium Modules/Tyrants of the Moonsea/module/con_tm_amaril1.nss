@@ -1,0 +1,18 @@
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+// MODULE: Tyrants of the Moonsea
+// NAME: con_tm_amaril1
+// DATE: April 1, 2005
+// AUTH: Luke Scull
+// NOTE: Appears if player has spoken with Amaril before.
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+int StartingConditional()
+{
+
+    // Inspect local variables
+    if(!(GetLocalInt(GetPCSpeaker(), "amarilspoke") == 1))
+        return FALSE;
+
+    return TRUE;
+}

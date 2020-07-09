@@ -1,0 +1,22 @@
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+// MODULE: Tyrants of the Moonsea
+// NAME: con_tm_lockyes
+// DATE: September 24, 2005
+// AUTH: Luke Scull
+// NOTE: Appears if Locktower Rescue quest is started.
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+int StartingConditional()
+{
+object oPC = GetPCSpeaker();
+
+int nInt;
+nInt=GetLocalInt(oPC, "NW_JOURNAL_ENTRYLocktowerRescue");
+
+if (nInt < 10)
+   return FALSE;
+
+return TRUE;
+}
+

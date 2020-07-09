@@ -1,0 +1,17 @@
+//::///////////////////////////////////////////////
+//:: FileName c_f_rag_persuade
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: Script Wizard
+//:: Created On: 2018-09-24 1:02:00 PM
+//:://////////////////////////////////////////////
+#include "nw_i0_plot"
+
+int StartingConditional()
+{
+    int bSuccess = GetLocalInt(GetModule(), "ddf_rag_persuade");
+
+    if(bSuccess == TRUE) return FALSE;
+
+    return TRUE;
+}

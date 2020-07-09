@@ -1,0 +1,21 @@
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+// MODULE: Tyrants of the Moonsea
+// NAME: con_tm_madoc2
+// DATE: August 29, 2005
+// AUTH: Luke Scull
+// NOTE: Appears when "Voonlar" journal entry 10+
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+int StartingConditional()
+{
+object oPC = GetPCSpeaker();
+
+int nInt;
+nInt=GetLocalInt(oPC, "NW_JOURNAL_ENTRYVoonlar");
+
+if (nInt < 10)
+   return FALSE;
+
+return TRUE;
+}

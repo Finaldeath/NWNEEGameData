@@ -1,0 +1,23 @@
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+// MODULE: Tyrants of the Moonsea
+// NAME: con_tm_artemis1
+// DATE: November 2, 2005
+// AUTH: Luke Scull
+// NOTE: Appears if "Demons & Slaadi" quest started.
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+int StartingConditional()
+{
+object oPC = GetPCSpeaker();
+
+int nInt;
+nInt=GetLocalInt(oPC, "NW_JOURNAL_ENTRYFiendsAtWar");
+
+if (nInt < 10)
+   return FALSE;
+
+return TRUE;
+}
+
+

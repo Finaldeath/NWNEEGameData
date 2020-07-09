@@ -1,0 +1,22 @@
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+// MODULE: Tyrants of the Moonsea
+// NAME: con_tm_bennart4
+// DATE: October 16, 2005
+// AUTH: Luke Scull
+// NOTE: Appears if LocktowerRescue journal entry on 100.
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+int StartingConditional()
+{
+object oPC = GetPCSpeaker();
+
+int nInt;
+nInt=GetLocalInt(oPC, "NW_JOURNAL_ENTRYLocktowerRescue");
+
+if (!(nInt == 100))
+   return FALSE;
+
+return TRUE;
+}
+

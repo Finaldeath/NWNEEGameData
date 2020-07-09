@@ -1,0 +1,19 @@
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+// MODULE: Tyrants of the Moonsea
+// NAME: con_tm_branon2
+// DATE: Dcember 6, 2005
+// AUTH: Luke Scull
+// NOTE: Appears if player has not yet confirmed
+//       Branon is a merchant.
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+int StartingConditional()
+{
+
+    // Inspect local variables
+    if(!(GetLocalInt(GetPCSpeaker(), "branonmerchant") != 1))
+        return FALSE;
+
+    return TRUE;
+}

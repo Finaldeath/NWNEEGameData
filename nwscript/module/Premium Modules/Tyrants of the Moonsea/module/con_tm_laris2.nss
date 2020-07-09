@@ -1,0 +1,23 @@
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+// MODULE: Tyrants of the Moonsea
+// NAME: con_tm_laris2
+// DATE: April 1, 2006
+// AUTH: Luke Scull
+// NOTE: Appears when Laris's Curios journal entry
+//       is on 10.
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+int StartingConditional()
+{
+object oPC = GetPCSpeaker();
+
+int nInt;
+nInt=GetLocalInt(oPC, "NW_JOURNAL_ENTRYLarissCurios");
+
+if (!(nInt == 10))
+   return FALSE;
+
+return TRUE;
+}
+

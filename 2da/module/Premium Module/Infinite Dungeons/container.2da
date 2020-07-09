@@ -1,0 +1,18 @@
+2DA V2.0                                                                  
+                                                                             
+        OBJECT_RESREF    OBJECT_NAME       TILESETS
+0       id1_con001       "Barrel"          010100110111111
+1       id1_con002       "Black Barrel"    000010001000000   
+2       id1_con003       "Black Crate"     000010001000000   
+3       id1_con004       "Black Crate"     000010001000000   
+4       id1_con005       "Box"             011100110111111
+5       id1_con006       "Box"             011100110111111
+6       id1_con007       "Box"             011100110111111
+7       id1_con008       "Box"             011100110111111
+8       id1_con009       "Chest"           111101110111111
+9       id1_con010       "Chest"           111101110111111
+10      id1_con011       "Chest"           111101110111111
+11      id1_con012       "Chest"           111101110111111
+12      id1_con013       "Chest"           000010001000000   
+13      id1_con014       "Sacks"           010000000000001
+14      **** WARNING: EDITING ENTRIES BEFORE THIS LINE CAN CAUSE THE MODULE TO MALFUNCTION. ****

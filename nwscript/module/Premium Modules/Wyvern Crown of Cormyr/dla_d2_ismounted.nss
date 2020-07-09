@@ -1,0 +1,18 @@
+//::///////////////////////////////////////////////
+//:: dla_d2_ismounted
+//:: DragonLance Adventures (DLA)
+//:://////////////////////////////////////////////
+/*
+   Check if the character is mounted in a horse
+*/
+//:://////////////////////////////////////////////
+//:: Created By: Gale
+//:: Created On: May 22, 2005
+//:://////////////////////////////////////////////
+
+#include "dla_i0_horse"
+
+int StartingConditional()
+{
+    return DLA_GetIsMounted(GetPCSpeaker());
+}

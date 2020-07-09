@@ -1,0 +1,7 @@
+2DA V2.0
+
+      Name_Singular      ResRef         Class          Spellcaster
+0     "Drider Fighter"   id_drider004   4              ****
+1     "Drider Rogue"     id_drider008   8              ****
+2     "Drider Cleric"    id_drider002   2              1
+3     "Drider Wizard"    id_drider010   10             1

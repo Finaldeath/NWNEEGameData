@@ -1,0 +1,13 @@
+//::///////////////////////////////////////////////
+//:: FileName con_ac_jouka500
+//:: Jouka quest reward set at 500
+//:://////////////////////////////////////////////
+//:: Created By: Alan Tarrant
+//:: Created On: 4/9/2006 7:59:11 PM
+//:://////////////////////////////////////////////
+void main()
+{
+    // Set the variables
+    SetLocalInt(GetPCSpeaker(), "ac_joukareward", 500);
+
+}
