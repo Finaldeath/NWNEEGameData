@@ -5941,6 +5941,32 @@ int VIBRATOR_MOTOR_ANY                                   = 0;
 int VIBRATOR_MOTOR_LEFT                                  = 1;
 int VIBRATOR_MOTOR_RIGHT                                 = 2;
 
+int SCREEN_ANCHOR_TOP_LEFT                               = 0;
+int SCREEN_ANCHOR_TOP_RIGHT                              = 1;
+int SCREEN_ANCHOR_BOTTOM_LEFT                            = 2;
+int SCREEN_ANCHOR_BOTTOM_RIGHT                           = 3;
+int SCREEN_ANCHOR_CENTER                                 = 4;
+
+int DOMAIN_AIR                                           = 0;
+int DOMAIN_ANIMAL                                        = 1;
+int DOMAIN_DEATH                                         = 3;
+int DOMAIN_DESTRUCTION                                   = 4;
+int DOMAIN_EARTH                                         = 5;
+int DOMAIN_EVIL                                          = 6;
+int DOMAIN_FIRE                                          = 7;
+int DOMAIN_GOOD                                          = 8;
+int DOMAIN_HEALING                                       = 9;
+int DOMAIN_KNOWLEDGE                                     = 10;
+int DOMAIN_MAGIC                                         = 13;
+int DOMAIN_PLANT                                         = 14;
+int DOMAIN_PROTECTION                                    = 15;
+int DOMAIN_STRENGTH                                      = 16;
+int DOMAIN_SUN                                           = 17;
+int DOMAIN_TRAVEL                                        = 18;
+int DOMAIN_TRICKERY                                      = 19;
+int DOMAIN_WAR                                           = 20;
+int DOMAIN_WATER                                         = 21;
+
 string sLanguage = "nwscript";
 
 // Get an integer between 0 and nMaxInteger-1.
@@ -11295,3 +11321,37 @@ void Reserved899();
 // If oPC is OBJECT_INVALID, it will apply the override to all active players
 // Setting sNewName to "" will clear the override and revert to original.
 void SetTextureOverride(string sOldName, string sNewName = "", object oPC = OBJECT_INVALID);
+
+// Displays sMsg on oPC's screen.
+// The message is displayed on top of whatever is on the screen, including UI elements
+//  nX, nY - coordinates of the first character to be displayed. The value is in terms
+//           of character 'slot' relative to the nAnchor anchor point.
+//           If the number is negative, it is applied from the bottom/right.
+//  nAnchor - SCREEN_ANCHOR_* constant
+//  fLife - Duration in seconds until the string disappears.
+//  nRGBA, nRGBA2 - Colors of the string in 0xRRGGBBAA format. String starts at nRGBA,
+//                  but as it nears end of life, it will slowly blend into nRGBA2.
+//  nID - Optional ID of a string. If not 0, subsequent calls to PostString will
+//        remove the old string with the same ID, even if it's lifetime has not elapsed.
+//        Only positive values are allowed.
+//  sFont - If specified, use this custom font instead of default console font.
+void PostString(object oPC, string sMsg, int nX = 0, int nY = 0, int nAnchor = SCREEN_ANCHOR_TOP_LEFT, float fLife = 10.0f, int nRGBA = 2147418367, int nRGBA2 = 2147418367, int nID = 0, string sFont="");
+
+// Returns oCreature's spell school specialization in nClass (SPELL_SCHOOL_* constants)
+// Unless custom content is used, only Wizards have spell schools
+// Returns -1 on error
+int GetSpecialization(object oCreature, int nClass = CLASS_TYPE_WIZARD);
+
+// Returns oCreature's domain in nClass (DOMAIN_* constants)
+// nDomainIndex - 1 or 2
+// Unless custom content is used, only Clerics have domains
+// Returns -1 on error
+int GetDomain(object oCreature, int nDomainIndex = 1, int nClass = CLASS_TYPE_CLERIC);
+
+// Returns the build number of oPlayer (i.e. 8193).
+// Returns 0 if the given object isn't a player or did not advertise their build info.
+int GetPlayerBuildVersionMajor(object oPlayer);
+
+// Returns the patch revision of oPlayer (i.e. 8).
+// Returns 0 if the given object isn't a player or did not advertise their build info.
+int GetPlayerBuildVersionMinor(object oPlayer);
