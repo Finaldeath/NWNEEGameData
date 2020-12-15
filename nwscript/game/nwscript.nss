@@ -8,12 +8,13 @@
 //
 ////////////////////////////////////////////////////////
 
-#define ENGINE_NUM_STRUCTURES   5
+#define ENGINE_NUM_STRUCTURES   6
 #define ENGINE_STRUCTURE_0      effect
 #define ENGINE_STRUCTURE_1      event
 #define ENGINE_STRUCTURE_2      location
 #define ENGINE_STRUCTURE_3      talent
 #define ENGINE_STRUCTURE_4      itemproperty
+#define ENGINE_STRUCTURE_5      sqlquery
 
 // Constants
 
@@ -100,6 +101,7 @@ int    OBJECT_TYPE_WAYPOINT         = 32;
 int    OBJECT_TYPE_PLACEABLE        = 64;
 int    OBJECT_TYPE_STORE            = 128;
 int    OBJECT_TYPE_ENCOUNTER        = 256;
+int    OBJECT_TYPE_TILE             = 512;
 int    OBJECT_TYPE_ALL              = 32767;
 
 int    OBJECT_TYPE_INVALID          = 32767;
@@ -5790,24 +5792,39 @@ int COLOR_CHANNEL_TATTOO_1                      = 2;
 int COLOR_CHANNEL_TATTOO_2                      = 3;
 
 // The following resrefs must match those in the tileset's set file.
-string TILESET_RESREF_BEHOLDER_CAVES    = "tib01";
-string TILESET_RESREF_CASTLE_INTERIOR   = "tic01";
-string TILESET_RESREF_CITY_EXTERIOR     = "tcn01";
-string TILESET_RESREF_CITY_INTERIOR     = "tin01";
-string TILESET_RESREF_CRYPT             = "tdc01";
-string TILESET_RESREF_DESERT            = "ttd01";
-string TILESET_RESREF_DROW_INTERIOR     = "tid01";
-string TILESET_RESREF_DUNGEON           = "tde01";
-string TILESET_RESREF_FOREST            = "ttf01";
-string TILESET_RESREF_FROZEN_WASTES     = "tti01";
-string TILESET_RESREF_ILLITHID_INTERIOR = "tii01";
-string TILESET_RESREF_MICROSET          = "tms01";
-string TILESET_RESREF_MINES_AND_CAVERNS = "tdm01";
-string TILESET_RESREF_RUINS             = "tdr01";
-string TILESET_RESREF_RURAL             = "ttr01";
-string TILESET_RESREF_RURAL_WINTER      = "tts01";
-string TILESET_RESREF_SEWERS            = "tds01";
-string TILESET_RESREF_UNDERDARK         = "ttu01";
+string TILESET_RESREF_BEHOLDER_CAVES        = "tib01";
+string TILESET_RESREF_CASTLE_INTERIOR       = "tic01";
+string TILESET_RESREF_CITY_EXTERIOR         = "tcn01";
+string TILESET_RESREF_CITY_INTERIOR         = "tin01";
+string TILESET_RESREF_CRYPT                 = "tdc01";
+string TILESET_RESREF_DESERT                = "ttd01";
+string TILESET_RESREF_DROW_INTERIOR         = "tid01";
+string TILESET_RESREF_DUNGEON               = "tde01";
+string TILESET_RESREF_FOREST                = "ttf01";
+string TILESET_RESREF_FROZEN_WASTES         = "tti01";
+string TILESET_RESREF_ILLITHID_INTERIOR     = "tii01";
+string TILESET_RESREF_MICROSET              = "tms01";
+string TILESET_RESREF_MINES_AND_CAVERNS     = "tdm01";
+string TILESET_RESREF_RUINS                 = "tdr01";
+string TILESET_RESREF_RURAL                 = "ttr01";
+string TILESET_RESREF_RURAL_WINTER          = "tts01";
+string TILESET_RESREF_SEWERS                = "tds01";
+string TILESET_RESREF_UNDERDARK             = "ttu01";
+string TILESET_RESREF_LIZARDFOLK_INTERIOR   = "dag01";
+string TILESET_RESREF_MEDIEVAL_CITY_2       = "tcm02";
+string TILESET_RESREF_MEDIEVAL_RURAL_2      = "trm02";
+string TILESET_RESREF_EARLY_WINTER_2        = "trs02";
+string TILESET_RESREF_SEASHIPS              = "tss13";
+string TILESET_RESREF_FOREST_FACELIFT       = "ttf02";
+string TILESET_RESREF_RURAL_WINTER_FACELIFT = "tts02";
+string TILESET_RESREF_STEAMWORKS            = "tsw01";
+string TILESET_RESREF_BARROWS_INTERIOR      = "tbw01";
+string TILESET_RESREF_SEA_CAVES             = "tdt01";
+string TILESET_RESREF_CITY_INTERIOR_2       = "tni01";
+string TILESET_RESREF_CASTLE_INTERIOR_2     = "tni02";
+string TILESET_RESREF_CASTLE_EXTERIOR_RURAL = "tno01";
+string TILESET_RESREF_TROPICAL              = "ttz01";
+string TILESET_RESREF_FORT_INTERIOR         = "twc03";
 
 // These constants determine which name table to use when generating random names.
 int NAME_FIRST_GENERIC_MALE     = -1;
@@ -5853,6 +5870,7 @@ int EVENT_SCRIPT_MODULE_ON_PLAYER_CANCEL_CUTSCENE        = 3014;
 int EVENT_SCRIPT_MODULE_ON_EQUIP_ITEM                    = 3015;
 int EVENT_SCRIPT_MODULE_ON_UNEQUIP_ITEM                  = 3016;
 int EVENT_SCRIPT_MODULE_ON_PLAYER_CHAT                   = 3017;
+int EVENT_SCRIPT_MODULE_ON_PLAYER_TARGET                 = 3018;
 
 int EVENT_SCRIPT_AREA_ON_HEARTBEAT                       = 4000;
 int EVENT_SCRIPT_AREA_ON_USER_DEFINED_EVENT              = 4001;
@@ -5966,6 +5984,73 @@ int DOMAIN_TRAVEL                                        = 18;
 int DOMAIN_TRICKERY                                      = 19;
 int DOMAIN_WAR                                           = 20;
 int DOMAIN_WATER                                         = 21;
+
+int MOUSECURSOR_DEFAULT                                  = 1;
+int MOUSECURSOR_DEFAULT_DOWN                             = 2;
+int MOUSECURSOR_WALK                                     = 3;
+int MOUSECURSOR_WALK_DOWN                                = 4;
+int MOUSECURSOR_NOWALK                                   = 5;
+int MOUSECURSOR_NOWALK_DOWN                              = 6;
+int MOUSECURSOR_ATTACK                                   = 7;
+int MOUSECURSOR_ATTACK_DOWN                              = 8;
+int MOUSECURSOR_NOATTACK                                 = 9;
+int MOUSECURSOR_NOATTACK_DOWN                            = 10;
+int MOUSECURSOR_TALK                                     = 11;
+int MOUSECURSOR_TALK_DOWN                                = 12;
+int MOUSECURSOR_NOTALK                                   = 13;
+int MOUSECURSOR_NOTALK_DOWN                              = 14;
+int MOUSECURSOR_FOLLOW                                   = 15;
+int MOUSECURSOR_FOLLOW_DOWN                              = 16;
+int MOUSECURSOR_EXAMINE                                  = 17;
+int MOUSECURSOR_EXAMINE_DOWN                             = 18;
+int MOUSECURSOR_NOEXAMINE                                = 19;
+int MOUSECURSOR_NOEXAMINE_DOWN                           = 20;
+int MOUSECURSOR_TRANSITION                               = 21;
+int MOUSECURSOR_TRANSITION_DOWN                          = 22;
+int MOUSECURSOR_DOOR                                     = 23;
+int MOUSECURSOR_DOOR_DOWN                                = 24;
+int MOUSECURSOR_USE                                      = 25;
+int MOUSECURSOR_USE_DOWN                                 = 26;
+int MOUSECURSOR_NOUSE                                    = 27;
+int MOUSECURSOR_NOUSE_DOWN                               = 28;
+int MOUSECURSOR_MAGIC                                    = 29;
+int MOUSECURSOR_MAGIC_DOWN                               = 30;
+int MOUSECURSOR_NOMAGIC                                  = 31;
+int MOUSECURSOR_NOMAGIC_DOWN                             = 32;
+int MOUSECURSOR_DISARM                                   = 33;
+int MOUSECURSOR_DISARM_DOWN                              = 34;
+int MOUSECURSOR_NODISARM                                 = 35;
+int MOUSECURSOR_NODISARM_DOWN                            = 36;
+int MOUSECURSOR_ACTION                                   = 37;
+int MOUSECURSOR_ACTION_DOWN                              = 38;
+int MOUSECURSOR_NOACTION                                 = 39;
+int MOUSECURSOR_NOACTION_DOWN                            = 40;
+int MOUSECURSOR_LOCK                                     = 41;
+int MOUSECURSOR_LOCK_DOWN                                = 42;
+int MOUSECURSOR_NOLOCK                                   = 43;
+int MOUSECURSOR_NOLOCK_DOWN                              = 44;
+int MOUSECURSOR_PUSHPIN                                  = 45;
+int MOUSECURSOR_PUSHPIN_DOWN                             = 46;
+int MOUSECURSOR_CREATE                                   = 47;
+int MOUSECURSOR_CREATE_DOWN                              = 48;
+int MOUSECURSOR_NOCREATE                                 = 49;
+int MOUSECURSOR_NOCREATE_DOWN                            = 50;
+int MOUSECURSOR_KILL                                     = 51;
+int MOUSECURSOR_KILL_DOWN                                = 52;
+int MOUSECURSOR_NOKILL                                   = 53;
+int MOUSECURSOR_NOKILL_DOWN                              = 54;
+int MOUSECURSOR_HEAL                                     = 55;
+int MOUSECURSOR_HEAL_DOWN                                = 56;
+int MOUSECURSOR_NOHEAL                                   = 57;
+int MOUSECURSOR_NOHEAL_DOWN                              = 58;
+int MOUSECURSOR_RUNARROW                                 = 59;
+int MOUSECURSOR_WALKARROW                                = 75;
+int MOUSECURSOR_PICKUP                                   = 91;
+int MOUSECURSOR_PICKUP_DOWN                              = 92;
+int MOUSECURSOR_CUSTOM_00                                = 93;  // gui_mp_custom00u
+int MOUSECURSOR_CUSTOM_00_DOWN                           = 94;  // gui_mp_custom00d
+int MOUSECURSOR_CUSTOM_99                                = 291; // gui_mp_custom99u
+int MOUSECURSOR_CUSTOM_99_DOWN                           = 292; // gui_mp_custom99d
 
 string sLanguage = "nwscript";
 
@@ -6958,7 +7043,7 @@ int GetMatchedSubstringsCount();
 // - nVisualEffectId
 // - nMissEffect: if this is TRUE, a random vector near or past the target will
 //   be generated, on which to play the effect
-effect EffectVisualEffect(int nVisualEffectId, int nMissEffect=FALSE);
+effect EffectVisualEffect(int nVisualEffectId, int nMissEffect=FALSE, float fScale=1.0f, vector vTranslate=[0.0,0.0,0.0], vector vRotate=[0.0,0.0,0.0]);
 
 // Get the weakest member of oFactionMember's faction.
 // * Returns OBJECT_INVALID if oFactionMember's faction is invalid.
@@ -7134,7 +7219,7 @@ void ActionResumeConversation();
 //   past the target
 // * Returns an effect of type EFFECT_TYPE_INVALIDEFFECT if nBeamVisualEffect is
 //   not valid.
-effect EffectBeam(int nBeamVisualEffect, object oEffector, int nBodyPart, int bMissEffect=FALSE);
+effect EffectBeam(int nBeamVisualEffect, object oEffector, int nBodyPart, int bMissEffect=FALSE, float fScale=1.0f, vector vTranslate=[0.0,0.0,0.0], vector vRotate=[0.0,0.0,0.0]);
 
 // Get an integer between 0 and 100 (inclusive) that represents how oSource
 // feels about oTarget.
@@ -11355,3 +11440,199 @@ int GetPlayerBuildVersionMajor(object oPlayer);
 // Returns the patch revision of oPlayer (i.e. 8).
 // Returns 0 if the given object isn't a player or did not advertise their build info.
 int GetPlayerBuildVersionMinor(object oPlayer);
+
+// Returns the script parameter value for a given parameter name.
+// Script parameters can be set for conversation scripts in the toolset's
+// Conversation Editor, or for any script with SetScriptParam().
+// * Will return "" if a parameter with the given name does not exist.
+string GetScriptParam(string sParamName);
+
+// Set a script parameter value for the next script to be run.
+// Call this function to set parameters right before calling ExecuteScript().
+void SetScriptParam(string sParamName, string sParamValue);
+
+// Returns the number of uses per day remaining of the given item and item property.
+// * Will return 0 if the given item does not have the requested item property,
+//   or the item property is not uses/day.
+int GetItemPropertyUsesPerDayRemaining(object oItem, itemproperty ip);
+
+// Sets the number of uses per day remaining of the given item and item property.
+// * Will do nothing if the given item and item property is not uses/day.
+// * Will constrain nUsesPerDay to the maximum allowed as the cost table defines.
+void SetItemPropertyUsesPerDayRemaining(object oItem, itemproperty ip, int nUsesPerDay);
+
+// Queue an action to use an active item property.
+// * oItem - item that has the item property to use
+// * ip - item property to use
+// * object oTarget - target
+// * nSubPropertyIndex - specify if your itemproperty has subproperties (such as subradial spells)
+// * bDecrementCharges - decrement charges if item property is limited
+void ActionUseItemOnObject(object oItem, itemproperty ip, object oTarget, int nSubPropertyIndex = 0, int bDecrementCharges = TRUE);
+
+// Queue an action to use an active item property.
+// * oItem - item that has the item property to use
+// * ip - item property to use
+// * location lTarget - target location (must be in the same area as item possessor)
+// * nSubPropertyIndex - specify if your itemproperty has subproperties (such as subradial spells)
+// * bDecrementCharges - decrement charges if item property is limited
+void ActionUseItemAtLocation(object oItem, itemproperty ip, location lTarget, int nSubPropertyIndex = 0, int bDecrementCharges = TRUE);
+
+// Makes oPC enter a targeting mode, letting them select an object as a target
+// If a PC selects a target or cancels out, it will trigger the module OnPlayerTarget event.
+void EnterTargetingMode(object oPC, int nValidObjectTypes = OBJECT_TYPE_ALL, int nMouseCursorId = MOUSECURSOR_MAGIC, int nBadTargetCursor = MOUSECURSOR_NOMAGIC);
+
+// Gets the target object in the module OnPlayerTarget event.
+// Returns the area object when the target is the ground.
+// Note: returns OBJECT_INVALID if the player cancelled out of targeting mode.
+object GetTargetingModeSelectedObject();
+
+// Gets the target position in the module OnPlayerTarget event.
+vector GetTargetingModeSelectedPosition();
+
+// Gets the player object that triggered the OnPlayerTarget event.
+object GetLastPlayerToSelectTarget();
+
+// Sets oObject's hilite color to nColor
+// The nColor format is 0xRRGGBB; -1 clears the color override.
+void SetObjectHiliteColor(object oObject, int nColor = -1);
+
+// Sets the cursor (MOUSECURSOR_*) to use when hovering over oObject
+void SetObjectMouseCursor(object oObject, int nCursor = -1);
+
+// Returns TRUE if the given player-controlled creature has DM privileges
+// gained through a player login (as opposed to the DM client).
+// Note: GetIsDM() also returns TRUE for player creature DMs.
+int GetIsPlayerDM(object oCreature);
+
+// Sets the detailed wind data for oArea
+// The predefined values in the toolset are:
+//   NONE:  vDirection=(1.0, 1.0, 0.0), fMagnitude=0.0, fYaw=0.0,   fPitch=0.0
+//   LIGHT: vDirection=(1.0, 1.0, 0.0), fMagnitude=1.0, fYaw=100.0, fPitch=3.0
+//   HEAVY: vDirection=(1.0, 1.0, 0.0), fMagnitude=2.0, fYaw=150.0, fPitch=5.0
+void SetAreaWind(object oArea, vector vDirection, float fMagnitude, float fYaw, float fPitch);
+
+// Replace's oObject's texture sOld with sNew.
+// Specifying sNew = "" will restore the original texture.
+// If sNew cannot be found, the original texture will be restored.
+// sNew must refer to a simple texture, not PLT
+void ReplaceObjectTexture(object oObject, string sOld, string sNew = "");
+
+// Destroys the given sqlite database, clearing out all data and schema.
+// This operation is _immediate_ and _irreversible_, even when
+// inside a transaction or running query.
+// Existing active/prepared sqlqueries will remain functional, but any references
+// to stored data or schema members will be invalidated.
+// oObject: Same as SqlPrepareQueryObject().
+//          To reset a campaign database, please use DestroyCampaignDatabase().
+void SqlDestroyDatabase(object oObject);
+
+// Returns "" if the last Sql command succeeded; or a human-readable error otherwise.
+// Additionally, all SQL errors are logged to the server log.
+string SqlGetError(sqlquery sqlQuery);
+
+// Sets up a query.
+// This will NOT run the query; only make it available for parameter binding.
+// To run the query, you need to call SqlStep(); even if you do not
+// expect result data.
+// sDatabase: The name of a campaign database.
+//            Note that when accessing campaign databases, you do not write access
+//            to the builtin tables needed for CampaignDB functionality.
+// N.B.: You can pass sqlqueries into DelayCommand; HOWEVER
+//       *** they will NOT survive a game save/load ***
+//       Any commands on a restored sqlquery will fail.
+sqlquery SqlPrepareQueryCampaign(string sDatabase, string sQuery);
+
+// Sets up a query.
+// This will NOT run the query; only make it available for parameter binding.
+// To run the query, you need to call SqlStep(); even if you do not
+// expect result data.
+// oObject: Can be either the module (GetModule()), or a player character.
+//          The database is persisted to savegames in case of the module,
+//          and to character files in case of a player characters.
+//          Other objects cannot carry databases, and this function call
+//          will error for them.
+// N.B: Databases on objects (especially player characters!) should be kept
+//      to a reasonable size. Delete old data you no longer need.
+//      If you attempt to store more than a few megabytes of data on a
+//      player creature, you may have a bad time.
+// N.B.: You can pass sqlqueries into DelayCommand; HOWEVER
+//       *** they will NOT survive a game save/load ***
+//       Any commands on a restored sqlquery will fail.
+sqlquery SqlPrepareQueryObject(object oObject, string sQuery);
+
+// Bind an integer to a named parameter of the given prepared query.
+// Example:
+//   sqlquery v = SqlPrepareQueryObject(GetModule(), "insert into test (col) values (@myint);");
+//   SqlBindInt(v, "@myint", 5);
+//   SqlStep(v);
+void SqlBindInt(sqlquery sqlQuery, string sParam, int nValue);
+
+// Bind a float to a named parameter of the given prepared query.
+void SqlBindFloat(sqlquery sqlQuery, string sParam, float fFloat);
+
+// Bind a string to a named parameter of the given prepared query.
+void SqlBindString(sqlquery sqlQuery, string sParam, string sString);
+
+// Bind a vector to a named parameter of the given prepared query.
+void SqlBindVector(sqlquery sqlQuery, string sParam, vector vVector);
+
+// Bind a object to a named parameter of the given prepared query.
+// Objects are serialized, NOT stored as a reference!
+// Currently supported object types: Creatures, Items, Placeables, Waypoints, Stores, Doors, Triggers
+void SqlBindObject(sqlquery sqlQuery, string sParam, object oObject);
+
+// Executes the given query and fetches a row; returning true if row data was
+// made available; false otherwise. Note that this will return false even if
+// the query ran successfully but did not return data.
+// You need to call SqlPrepareQuery() and potentially SqlBind* before calling this.
+// Example:
+//   sqlquery n = SqlPrepareQueryObject(GetFirstPC(), "select widget from widgets;");
+//   while (SqlStep(n))
+//     SendMessageToPC(GetFirstPC(), "Found widget: " + SqlGetString(n, 0));
+int SqlStep(sqlquery sqlQuery);
+
+// Retrieve a column cast as an integer of the currently stepped row.
+// You can call this after SqlStep() returned TRUE.
+// In case of error, 0 will be returned.
+// In traditional fashion, nIndex starts at 0.
+int SqlGetInt(sqlquery sqlQuery, int nIndex);
+
+// Retrieve a column cast as a float of the currently stepped row.
+// You can call this after SqlStep() returned TRUE.
+// In case of error, 0.0f will be returned.
+// In traditional fashion, nIndex starts at 0.
+float SqlGetFloat(sqlquery sqlQuery, int nIndex);
+
+// Retrieve a column cast as a string of the currently stepped row.
+// You can call this after SqlStep() returned TRUE.
+// In case of error, a empty string will be returned.
+// In traditional fashion, nIndex starts at 0.
+string SqlGetString(sqlquery sqlQuery, int nIndex);
+
+// Retrieve a vector of the currently stepped query.
+// You can call this after SqlStep() returned TRUE.
+// In case of error, a zero vector will be returned.
+// In traditional fashion, nIndex starts at 0.
+vector SqlGetVector(sqlquery sqlQuery, int nIndex);
+
+// Retrieve a object of the currently stepped query.
+// You can call this after SqlStep() returned TRUE.
+// The object will be spawned into a inventory if it is a item and the receiver
+// has the capability to receive it, otherwise at lSpawnAt.
+// Objects are serialized, NOT stored as a reference!
+// In case of error, INVALID_OBJECT will be returned.
+// In traditional fashion, nIndex starts at 0.
+object SqlGetObject(sqlquery sqlQuery, int nIndex, location lSpawnAt, object oInventory = OBJECT_INVALID);
+
+// Convert sHex, a string containing a hexadecimal object id,
+// into a object reference. Counterpart to ObjectToString().
+object StringToObject(string sHex);
+
+// Sets the current hitpoints of oObject.
+// * You cannot destroy or revive objects or creatures with this function.
+// * For currently dying PCs, you can only set hitpoints in the range of -9 to 0.
+// * All other objects need to be alive and the range is clamped to 1 and max hitpoints.
+// * This is not considered damage (or healing). It circumvents all combat logic, including damage resistance and reduction.
+// * This is not considered a friendly or hostile combat action. It will not affect factions, nor will it trigger script events.
+// * This will not advise player parties in the combat log.
+void SetCurrentHitPoints(object oObject, int nHitPoints);
