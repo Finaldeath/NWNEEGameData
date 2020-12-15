@@ -5106,8 +5106,8 @@
 5102 wallyDoor              TTF_UDoor_03  TTF02   nw_door_ttr_07 63491         1          1            0            
 5103 TempleDoor2            TTF_UDoor_04  TTF02   nw_door_ttr_09 63492         1          1            4            
 5104 FrstTranPly*TF         TTF_UDoor_05  TTF02   nw_door_ttr_25 63535         0          0            ****         
-5105 TTF02_Door01           ttf02_door01  TTF02   nw_door_ttf_51 5349          1          1            0            
-5106 TTF02_Door02           ttf02_door02  TTF02   nw_door_ttf_51 5349          1          1            0            
+5105 TTF02_Door01           ttf02_door01  TTF02   tm_dr_elven1   5349          1          1            0            
+5106 TTF02_Door02           ttf02_door02  TTF02   tm_dr_elven2   5349          1          1            0            
 5107 OS_RESERVED            ****          ****    ****           ****          ****       ****         ****         
 5108 OS_RESERVED            ****          ****    ****           ****          ****       ****         ****         
 5109 OS_RESERVED            ****          ****    ****           ****          ****       ****         ****         
