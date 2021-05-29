@@ -8,12 +8,14 @@
 //
 ////////////////////////////////////////////////////////
 
-#define ENGINE_NUM_STRUCTURES   5
+#define ENGINE_NUM_STRUCTURES   7
 #define ENGINE_STRUCTURE_0      effect
 #define ENGINE_STRUCTURE_1      event
 #define ENGINE_STRUCTURE_2      location
 #define ENGINE_STRUCTURE_3      talent
 #define ENGINE_STRUCTURE_4      itemproperty
+#define ENGINE_STRUCTURE_5      sqlquery
+#define ENGINE_STRUCTURE_6      cassowary
 
 // Constants
 
@@ -100,6 +102,7 @@ int    OBJECT_TYPE_WAYPOINT         = 32;
 int    OBJECT_TYPE_PLACEABLE        = 64;
 int    OBJECT_TYPE_STORE            = 128;
 int    OBJECT_TYPE_ENCOUNTER        = 256;
+int    OBJECT_TYPE_TILE             = 512;
 int    OBJECT_TYPE_ALL              = 32767;
 
 int    OBJECT_TYPE_INVALID          = 32767;
@@ -5790,24 +5793,39 @@ int COLOR_CHANNEL_TATTOO_1                      = 2;
 int COLOR_CHANNEL_TATTOO_2                      = 3;
 
 // The following resrefs must match those in the tileset's set file.
-string TILESET_RESREF_BEHOLDER_CAVES    = "tib01";
-string TILESET_RESREF_CASTLE_INTERIOR   = "tic01";
-string TILESET_RESREF_CITY_EXTERIOR     = "tcn01";
-string TILESET_RESREF_CITY_INTERIOR     = "tin01";
-string TILESET_RESREF_CRYPT             = "tdc01";
-string TILESET_RESREF_DESERT            = "ttd01";
-string TILESET_RESREF_DROW_INTERIOR     = "tid01";
-string TILESET_RESREF_DUNGEON           = "tde01";
-string TILESET_RESREF_FOREST            = "ttf01";
-string TILESET_RESREF_FROZEN_WASTES     = "tti01";
-string TILESET_RESREF_ILLITHID_INTERIOR = "tii01";
-string TILESET_RESREF_MICROSET          = "tms01";
-string TILESET_RESREF_MINES_AND_CAVERNS = "tdm01";
-string TILESET_RESREF_RUINS             = "tdr01";
-string TILESET_RESREF_RURAL             = "ttr01";
-string TILESET_RESREF_RURAL_WINTER      = "tts01";
-string TILESET_RESREF_SEWERS            = "tds01";
-string TILESET_RESREF_UNDERDARK         = "ttu01";
+string TILESET_RESREF_BEHOLDER_CAVES        = "tib01";
+string TILESET_RESREF_CASTLE_INTERIOR       = "tic01";
+string TILESET_RESREF_CITY_EXTERIOR         = "tcn01";
+string TILESET_RESREF_CITY_INTERIOR         = "tin01";
+string TILESET_RESREF_CRYPT                 = "tdc01";
+string TILESET_RESREF_DESERT                = "ttd01";
+string TILESET_RESREF_DROW_INTERIOR         = "tid01";
+string TILESET_RESREF_DUNGEON               = "tde01";
+string TILESET_RESREF_FOREST                = "ttf01";
+string TILESET_RESREF_FROZEN_WASTES         = "tti01";
+string TILESET_RESREF_ILLITHID_INTERIOR     = "tii01";
+string TILESET_RESREF_MICROSET              = "tms01";
+string TILESET_RESREF_MINES_AND_CAVERNS     = "tdm01";
+string TILESET_RESREF_RUINS                 = "tdr01";
+string TILESET_RESREF_RURAL                 = "ttr01";
+string TILESET_RESREF_RURAL_WINTER          = "tts01";
+string TILESET_RESREF_SEWERS                = "tds01";
+string TILESET_RESREF_UNDERDARK             = "ttu01";
+string TILESET_RESREF_LIZARDFOLK_INTERIOR   = "dag01";
+string TILESET_RESREF_MEDIEVAL_CITY_2       = "tcm02";
+string TILESET_RESREF_MEDIEVAL_RURAL_2      = "trm02";
+string TILESET_RESREF_EARLY_WINTER_2        = "trs02";
+string TILESET_RESREF_SEASHIPS              = "tss13";
+string TILESET_RESREF_FOREST_FACELIFT       = "ttf02";
+string TILESET_RESREF_RURAL_WINTER_FACELIFT = "tts02";
+string TILESET_RESREF_STEAMWORKS            = "tsw01";
+string TILESET_RESREF_BARROWS_INTERIOR      = "tbw01";
+string TILESET_RESREF_SEA_CAVES             = "tdt01";
+string TILESET_RESREF_CITY_INTERIOR_2       = "tni01";
+string TILESET_RESREF_CASTLE_INTERIOR_2     = "tni02";
+string TILESET_RESREF_CASTLE_EXTERIOR_RURAL = "tno01";
+string TILESET_RESREF_TROPICAL              = "ttz01";
+string TILESET_RESREF_FORT_INTERIOR         = "twc03";
 
 // These constants determine which name table to use when generating random names.
 int NAME_FIRST_GENERIC_MALE     = -1;
@@ -5853,6 +5871,7 @@ int EVENT_SCRIPT_MODULE_ON_PLAYER_CANCEL_CUTSCENE        = 3014;
 int EVENT_SCRIPT_MODULE_ON_EQUIP_ITEM                    = 3015;
 int EVENT_SCRIPT_MODULE_ON_UNEQUIP_ITEM                  = 3016;
 int EVENT_SCRIPT_MODULE_ON_PLAYER_CHAT                   = 3017;
+int EVENT_SCRIPT_MODULE_ON_PLAYER_TARGET                 = 3018;
 
 int EVENT_SCRIPT_AREA_ON_HEARTBEAT                       = 4000;
 int EVENT_SCRIPT_AREA_ON_USER_DEFINED_EVENT              = 4001;
@@ -5937,9 +5956,116 @@ int OBJECT_VISUAL_TRANSFORM_TRANSLATE_Y                  = 32;
 int OBJECT_VISUAL_TRANSFORM_TRANSLATE_Z                  = 33;
 int OBJECT_VISUAL_TRANSFORM_ANIMATION_SPEED              = 40;
 
+int OBJECT_VISUAL_TRANSFORM_LERP_NONE                    = 0; // 1
+int OBJECT_VISUAL_TRANSFORM_LERP_LINEAR                  = 1; // x
+int OBJECT_VISUAL_TRANSFORM_LERP_SMOOTHSTEP              = 2; // x * x * (3 - 2 * x)
+int OBJECT_VISUAL_TRANSFORM_LERP_INVERSE_SMOOTHSTEP      = 3; // 0.5 - sin(asin(1.0 - 2.0 * x) / 3.0)
+int OBJECT_VISUAL_TRANSFORM_LERP_EASE_IN                 = 4; // (1 - cosf(x * M_PI * 0.5))
+int OBJECT_VISUAL_TRANSFORM_LERP_EASE_OUT                = 5; // sinf(x * M_PI * 0.5)
+int OBJECT_VISUAL_TRANSFORM_LERP_QUADRATIC               = 6; // x * x
+int OBJECT_VISUAL_TRANSFORM_LERP_SMOOTHERSTEP            = 7; // (x * x * x * (x * (6.0 * x - 15.0) + 10.0))
+
 int VIBRATOR_MOTOR_ANY                                   = 0;
 int VIBRATOR_MOTOR_LEFT                                  = 1;
 int VIBRATOR_MOTOR_RIGHT                                 = 2;
+
+int SCREEN_ANCHOR_TOP_LEFT                               = 0;
+int SCREEN_ANCHOR_TOP_RIGHT                              = 1;
+int SCREEN_ANCHOR_BOTTOM_LEFT                            = 2;
+int SCREEN_ANCHOR_BOTTOM_RIGHT                           = 3;
+int SCREEN_ANCHOR_CENTER                                 = 4;
+
+int DOMAIN_AIR                                           = 0;
+int DOMAIN_ANIMAL                                        = 1;
+int DOMAIN_DEATH                                         = 3;
+int DOMAIN_DESTRUCTION                                   = 4;
+int DOMAIN_EARTH                                         = 5;
+int DOMAIN_EVIL                                          = 6;
+int DOMAIN_FIRE                                          = 7;
+int DOMAIN_GOOD                                          = 8;
+int DOMAIN_HEALING                                       = 9;
+int DOMAIN_KNOWLEDGE                                     = 10;
+int DOMAIN_MAGIC                                         = 13;
+int DOMAIN_PLANT                                         = 14;
+int DOMAIN_PROTECTION                                    = 15;
+int DOMAIN_STRENGTH                                      = 16;
+int DOMAIN_SUN                                           = 17;
+int DOMAIN_TRAVEL                                        = 18;
+int DOMAIN_TRICKERY                                      = 19;
+int DOMAIN_WAR                                           = 20;
+int DOMAIN_WATER                                         = 21;
+
+int MOUSECURSOR_DEFAULT                                  = 1;
+int MOUSECURSOR_DEFAULT_DOWN                             = 2;
+int MOUSECURSOR_WALK                                     = 3;
+int MOUSECURSOR_WALK_DOWN                                = 4;
+int MOUSECURSOR_NOWALK                                   = 5;
+int MOUSECURSOR_NOWALK_DOWN                              = 6;
+int MOUSECURSOR_ATTACK                                   = 7;
+int MOUSECURSOR_ATTACK_DOWN                              = 8;
+int MOUSECURSOR_NOATTACK                                 = 9;
+int MOUSECURSOR_NOATTACK_DOWN                            = 10;
+int MOUSECURSOR_TALK                                     = 11;
+int MOUSECURSOR_TALK_DOWN                                = 12;
+int MOUSECURSOR_NOTALK                                   = 13;
+int MOUSECURSOR_NOTALK_DOWN                              = 14;
+int MOUSECURSOR_FOLLOW                                   = 15;
+int MOUSECURSOR_FOLLOW_DOWN                              = 16;
+int MOUSECURSOR_EXAMINE                                  = 17;
+int MOUSECURSOR_EXAMINE_DOWN                             = 18;
+int MOUSECURSOR_NOEXAMINE                                = 19;
+int MOUSECURSOR_NOEXAMINE_DOWN                           = 20;
+int MOUSECURSOR_TRANSITION                               = 21;
+int MOUSECURSOR_TRANSITION_DOWN                          = 22;
+int MOUSECURSOR_DOOR                                     = 23;
+int MOUSECURSOR_DOOR_DOWN                                = 24;
+int MOUSECURSOR_USE                                      = 25;
+int MOUSECURSOR_USE_DOWN                                 = 26;
+int MOUSECURSOR_NOUSE                                    = 27;
+int MOUSECURSOR_NOUSE_DOWN                               = 28;
+int MOUSECURSOR_MAGIC                                    = 29;
+int MOUSECURSOR_MAGIC_DOWN                               = 30;
+int MOUSECURSOR_NOMAGIC                                  = 31;
+int MOUSECURSOR_NOMAGIC_DOWN                             = 32;
+int MOUSECURSOR_DISARM                                   = 33;
+int MOUSECURSOR_DISARM_DOWN                              = 34;
+int MOUSECURSOR_NODISARM                                 = 35;
+int MOUSECURSOR_NODISARM_DOWN                            = 36;
+int MOUSECURSOR_ACTION                                   = 37;
+int MOUSECURSOR_ACTION_DOWN                              = 38;
+int MOUSECURSOR_NOACTION                                 = 39;
+int MOUSECURSOR_NOACTION_DOWN                            = 40;
+int MOUSECURSOR_LOCK                                     = 41;
+int MOUSECURSOR_LOCK_DOWN                                = 42;
+int MOUSECURSOR_NOLOCK                                   = 43;
+int MOUSECURSOR_NOLOCK_DOWN                              = 44;
+int MOUSECURSOR_PUSHPIN                                  = 45;
+int MOUSECURSOR_PUSHPIN_DOWN                             = 46;
+int MOUSECURSOR_CREATE                                   = 47;
+int MOUSECURSOR_CREATE_DOWN                              = 48;
+int MOUSECURSOR_NOCREATE                                 = 49;
+int MOUSECURSOR_NOCREATE_DOWN                            = 50;
+int MOUSECURSOR_KILL                                     = 51;
+int MOUSECURSOR_KILL_DOWN                                = 52;
+int MOUSECURSOR_NOKILL                                   = 53;
+int MOUSECURSOR_NOKILL_DOWN                              = 54;
+int MOUSECURSOR_HEAL                                     = 55;
+int MOUSECURSOR_HEAL_DOWN                                = 56;
+int MOUSECURSOR_NOHEAL                                   = 57;
+int MOUSECURSOR_NOHEAL_DOWN                              = 58;
+int MOUSECURSOR_RUNARROW                                 = 59;
+int MOUSECURSOR_WALKARROW                                = 75;
+int MOUSECURSOR_PICKUP                                   = 91;
+int MOUSECURSOR_PICKUP_DOWN                              = 92;
+int MOUSECURSOR_CUSTOM_00                                = 93;  // gui_mp_custom00u
+int MOUSECURSOR_CUSTOM_00_DOWN                           = 94;  // gui_mp_custom00d
+int MOUSECURSOR_CUSTOM_99                                = 291; // gui_mp_custom99u
+int MOUSECURSOR_CUSTOM_99_DOWN                           = 292; // gui_mp_custom99d
+
+float CASSOWARY_STRENGTH_WEAK                            = 1.0;
+float CASSOWARY_STRENGTH_MEDIUM                          = 1000.0;
+float CASSOWARY_STRENGTH_STRONG                          = 1000000.0;
+float CASSOWARY_STRENGTH_REQUIRED                        = 1001001000.0;
 
 string sLanguage = "nwscript";
 
@@ -6932,7 +7058,7 @@ int GetMatchedSubstringsCount();
 // - nVisualEffectId
 // - nMissEffect: if this is TRUE, a random vector near or past the target will
 //   be generated, on which to play the effect
-effect EffectVisualEffect(int nVisualEffectId, int nMissEffect=FALSE);
+effect EffectVisualEffect(int nVisualEffectId, int nMissEffect=FALSE, float fScale=1.0f, vector vTranslate=[0.0,0.0,0.0], vector vRotate=[0.0,0.0,0.0]);
 
 // Get the weakest member of oFactionMember's faction.
 // * Returns OBJECT_INVALID if oFactionMember's faction is invalid.
@@ -7108,7 +7234,7 @@ void ActionResumeConversation();
 //   past the target
 // * Returns an effect of type EFFECT_TYPE_INVALIDEFFECT if nBeamVisualEffect is
 //   not valid.
-effect EffectBeam(int nBeamVisualEffect, object oEffector, int nBodyPart, int bMissEffect=FALSE);
+effect EffectBeam(int nBeamVisualEffect, object oEffector, int nBodyPart, int bMissEffect=FALSE, float fScale=1.0f, vector vTranslate=[0.0,0.0,0.0], vector vRotate=[0.0,0.0,0.0]);
 
 // Get an integer between 0 and 100 (inclusive) that represents how oSource
 // feels about oTarget.
@@ -8920,8 +9046,10 @@ int GetDefensiveCastingMode(object oCreature);
 // * returns APPEARANCE_TYPE_INVALID for non creatures/invalid creatures
 int GetAppearanceType(object oCreature);
 
-// SpawnScriptDebugger() will cause the script debugger to be executed
-// after this command is executed!
+// SpawnScriptDebugger() will attempt to communicate with the a running script debugger
+// instance. You need to run it yourself, and enable it in Options/Config beforehand.
+// A sample debug server is included with the game installation in utils/.
+// Will only work in singleplayer, NOT on dedicated servers.
 // In order to compile the script for debugging go to Tools->Options->Script Editor
 // and check the box labeled "Generate Debug Information When Compiling Scripts"
 // After you have checked the above box, recompile the script that you want to debug.
@@ -11205,14 +11333,14 @@ int SetEventScript(object oObject, int nHandler, string sScript);
 // - oObject can be any valid Creature, Placeable, Item or Door.
 // - nTransform is one of OBJECT_VISUAL_TRANSFORM_*
 // Returns the current (or default) value.
-float GetObjectVisualTransform(object oObject, int nTransform);
+float GetObjectVisualTransform(object oObject, int nTransform, int bCurrentLerp = FALSE);
 
 // Sets a visual transform on the given object.
 // - oObject can be any valid Creature, Placeable, Item or Door.
 // - nTransform is one of OBJECT_VISUAL_TRANSFORM_*
 // - fValue depends on the transformation to apply.
 // Returns the old/previous value.
-float SetObjectVisualTransform(object oObject, int nTransform, float fValue);
+float SetObjectVisualTransform(object oObject, int nTransform, float fValue, int nLerpType = OBJECT_VISUAL_TRANSFORM_LERP_NONE, float fLerpDuration = 0.0, int bPauseWithGame = TRUE);
 
 // Sets an integer material shader uniform override.
 // - sMaterial needs to be a material on that object.
@@ -11295,3 +11423,335 @@ void Reserved899();
 // If oPC is OBJECT_INVALID, it will apply the override to all active players
 // Setting sNewName to "" will clear the override and revert to original.
 void SetTextureOverride(string sOldName, string sNewName = "", object oPC = OBJECT_INVALID);
+
+// Displays sMsg on oPC's screen.
+// The message is displayed on top of whatever is on the screen, including UI elements
+//  nX, nY - coordinates of the first character to be displayed. The value is in terms
+//           of character 'slot' relative to the nAnchor anchor point.
+//           If the number is negative, it is applied from the bottom/right.
+//  nAnchor - SCREEN_ANCHOR_* constant
+//  fLife - Duration in seconds until the string disappears.
+//  nRGBA, nRGBA2 - Colors of the string in 0xRRGGBBAA format. String starts at nRGBA,
+//                  but as it nears end of life, it will slowly blend into nRGBA2.
+//  nID - Optional ID of a string. If not 0, subsequent calls to PostString will
+//        remove the old string with the same ID, even if it's lifetime has not elapsed.
+//        Only positive values are allowed.
+//  sFont - If specified, use this custom font instead of default console font.
+void PostString(object oPC, string sMsg, int nX = 0, int nY = 0, int nAnchor = SCREEN_ANCHOR_TOP_LEFT, float fLife = 10.0f, int nRGBA = 2147418367, int nRGBA2 = 2147418367, int nID = 0, string sFont="");
+
+// Returns oCreature's spell school specialization in nClass (SPELL_SCHOOL_* constants)
+// Unless custom content is used, only Wizards have spell schools
+// Returns -1 on error
+int GetSpecialization(object oCreature, int nClass = CLASS_TYPE_WIZARD);
+
+// Returns oCreature's domain in nClass (DOMAIN_* constants)
+// nDomainIndex - 1 or 2
+// Unless custom content is used, only Clerics have domains
+// Returns -1 on error
+int GetDomain(object oCreature, int nDomainIndex = 1, int nClass = CLASS_TYPE_CLERIC);
+
+// Returns the build number of oPlayer (i.e. 8193).
+// Returns 0 if the given object isn't a player or did not advertise their build info.
+int GetPlayerBuildVersionMajor(object oPlayer);
+
+// Returns the patch revision of oPlayer (i.e. 8).
+// Returns 0 if the given object isn't a player or did not advertise their build info.
+int GetPlayerBuildVersionMinor(object oPlayer);
+
+// Returns the script parameter value for a given parameter name.
+// Script parameters can be set for conversation scripts in the toolset's
+// Conversation Editor, or for any script with SetScriptParam().
+// * Will return "" if a parameter with the given name does not exist.
+string GetScriptParam(string sParamName);
+
+// Set a script parameter value for the next script to be run.
+// Call this function to set parameters right before calling ExecuteScript().
+void SetScriptParam(string sParamName, string sParamValue);
+
+// Returns the number of uses per day remaining of the given item and item property.
+// * Will return 0 if the given item does not have the requested item property,
+//   or the item property is not uses/day.
+int GetItemPropertyUsesPerDayRemaining(object oItem, itemproperty ip);
+
+// Sets the number of uses per day remaining of the given item and item property.
+// * Will do nothing if the given item and item property is not uses/day.
+// * Will constrain nUsesPerDay to the maximum allowed as the cost table defines.
+void SetItemPropertyUsesPerDayRemaining(object oItem, itemproperty ip, int nUsesPerDay);
+
+// Queue an action to use an active item property.
+// * oItem - item that has the item property to use
+// * ip - item property to use
+// * object oTarget - target
+// * nSubPropertyIndex - specify if your itemproperty has subproperties (such as subradial spells)
+// * bDecrementCharges - decrement charges if item property is limited
+void ActionUseItemOnObject(object oItem, itemproperty ip, object oTarget, int nSubPropertyIndex = 0, int bDecrementCharges = TRUE);
+
+// Queue an action to use an active item property.
+// * oItem - item that has the item property to use
+// * ip - item property to use
+// * location lTarget - target location (must be in the same area as item possessor)
+// * nSubPropertyIndex - specify if your itemproperty has subproperties (such as subradial spells)
+// * bDecrementCharges - decrement charges if item property is limited
+void ActionUseItemAtLocation(object oItem, itemproperty ip, location lTarget, int nSubPropertyIndex = 0, int bDecrementCharges = TRUE);
+
+// Makes oPC enter a targeting mode, letting them select an object as a target
+// If a PC selects a target or cancels out, it will trigger the module OnPlayerTarget event.
+void EnterTargetingMode(object oPC, int nValidObjectTypes = OBJECT_TYPE_ALL, int nMouseCursorId = MOUSECURSOR_MAGIC, int nBadTargetCursor = MOUSECURSOR_NOMAGIC);
+
+// Gets the target object in the module OnPlayerTarget event.
+// Returns the area object when the target is the ground.
+// Note: returns OBJECT_INVALID if the player cancelled out of targeting mode.
+object GetTargetingModeSelectedObject();
+
+// Gets the target position in the module OnPlayerTarget event.
+vector GetTargetingModeSelectedPosition();
+
+// Gets the player object that triggered the OnPlayerTarget event.
+object GetLastPlayerToSelectTarget();
+
+// Sets oObject's hilite color to nColor
+// The nColor format is 0xRRGGBB; -1 clears the color override.
+void SetObjectHiliteColor(object oObject, int nColor = -1);
+
+// Sets the cursor (MOUSECURSOR_*) to use when hovering over oObject
+void SetObjectMouseCursor(object oObject, int nCursor = -1);
+
+// Returns TRUE if the given player-controlled creature has DM privileges
+// gained through a player login (as opposed to the DM client).
+// Note: GetIsDM() also returns TRUE for player creature DMs.
+int GetIsPlayerDM(object oCreature);
+
+// Sets the detailed wind data for oArea
+// The predefined values in the toolset are:
+//   NONE:  vDirection=(1.0, 1.0, 0.0), fMagnitude=0.0, fYaw=0.0,   fPitch=0.0
+//   LIGHT: vDirection=(1.0, 1.0, 0.0), fMagnitude=1.0, fYaw=100.0, fPitch=3.0
+//   HEAVY: vDirection=(1.0, 1.0, 0.0), fMagnitude=2.0, fYaw=150.0, fPitch=5.0
+void SetAreaWind(object oArea, vector vDirection, float fMagnitude, float fYaw, float fPitch);
+
+// Replace's oObject's texture sOld with sNew.
+// Specifying sNew = "" will restore the original texture.
+// If sNew cannot be found, the original texture will be restored.
+// sNew must refer to a simple texture, not PLT
+void ReplaceObjectTexture(object oObject, string sOld, string sNew = "");
+
+// Destroys the given sqlite database, clearing out all data and schema.
+// This operation is _immediate_ and _irreversible_, even when
+// inside a transaction or running query.
+// Existing active/prepared sqlqueries will remain functional, but any references
+// to stored data or schema members will be invalidated.
+// oObject: Same as SqlPrepareQueryObject().
+//          To reset a campaign database, please use DestroyCampaignDatabase().
+void SqlDestroyDatabase(object oObject);
+
+// Returns "" if the last Sql command succeeded; or a human-readable error otherwise.
+// Additionally, all SQL errors are logged to the server log.
+string SqlGetError(sqlquery sqlQuery);
+
+// Sets up a query.
+// This will NOT run the query; only make it available for parameter binding.
+// To run the query, you need to call SqlStep(); even if you do not
+// expect result data.
+// sDatabase: The name of a campaign database.
+//            Note that when accessing campaign databases, you do not write access
+//            to the builtin tables needed for CampaignDB functionality.
+// N.B.: You can pass sqlqueries into DelayCommand; HOWEVER
+//       *** they will NOT survive a game save/load ***
+//       Any commands on a restored sqlquery will fail.
+// Please check the SQLite_README.txt file in lang/en/docs/ for the list of builtin functions.
+sqlquery SqlPrepareQueryCampaign(string sDatabase, string sQuery);
+
+// Sets up a query.
+// This will NOT run the query; only make it available for parameter binding.
+// To run the query, you need to call SqlStep(); even if you do not
+// expect result data.
+// oObject: Can be either the module (GetModule()), or a player character.
+//          The database is persisted to savegames in case of the module,
+//          and to character files in case of a player characters.
+//          Other objects cannot carry databases, and this function call
+//          will error for them.
+// N.B: Databases on objects (especially player characters!) should be kept
+//      to a reasonable size. Delete old data you no longer need.
+//      If you attempt to store more than a few megabytes of data on a
+//      player creature, you may have a bad time.
+// N.B.: You can pass sqlqueries into DelayCommand; HOWEVER
+//       *** they will NOT survive a game save/load ***
+//       Any commands on a restored sqlquery will fail.
+// Please check the SQLite_README.txt file in lang/en/docs/ for the list of builtin functions.
+sqlquery SqlPrepareQueryObject(object oObject, string sQuery);
+
+// Bind an integer to a named parameter of the given prepared query.
+// Example:
+//   sqlquery v = SqlPrepareQueryObject(GetModule(), "insert into test (col) values (@myint);");
+//   SqlBindInt(v, "@myint", 5);
+//   SqlStep(v);
+void SqlBindInt(sqlquery sqlQuery, string sParam, int nValue);
+
+// Bind a float to a named parameter of the given prepared query.
+void SqlBindFloat(sqlquery sqlQuery, string sParam, float fFloat);
+
+// Bind a string to a named parameter of the given prepared query.
+void SqlBindString(sqlquery sqlQuery, string sParam, string sString);
+
+// Bind a vector to a named parameter of the given prepared query.
+void SqlBindVector(sqlquery sqlQuery, string sParam, vector vVector);
+
+// Bind a object to a named parameter of the given prepared query.
+// Objects are serialized, NOT stored as a reference!
+// Currently supported object types: Creatures, Items, Placeables, Waypoints, Stores, Doors, Triggers
+void SqlBindObject(sqlquery sqlQuery, string sParam, object oObject);
+
+// Executes the given query and fetches a row; returning true if row data was
+// made available; false otherwise. Note that this will return false even if
+// the query ran successfully but did not return data.
+// You need to call SqlPrepareQuery() and potentially SqlBind* before calling this.
+// Example:
+//   sqlquery n = SqlPrepareQueryObject(GetFirstPC(), "select widget from widgets;");
+//   while (SqlStep(n))
+//     SendMessageToPC(GetFirstPC(), "Found widget: " + SqlGetString(n, 0));
+int SqlStep(sqlquery sqlQuery);
+
+// Retrieve a column cast as an integer of the currently stepped row.
+// You can call this after SqlStep() returned TRUE.
+// In case of error, 0 will be returned.
+// In traditional fashion, nIndex starts at 0.
+int SqlGetInt(sqlquery sqlQuery, int nIndex);
+
+// Retrieve a column cast as a float of the currently stepped row.
+// You can call this after SqlStep() returned TRUE.
+// In case of error, 0.0f will be returned.
+// In traditional fashion, nIndex starts at 0.
+float SqlGetFloat(sqlquery sqlQuery, int nIndex);
+
+// Retrieve a column cast as a string of the currently stepped row.
+// You can call this after SqlStep() returned TRUE.
+// In case of error, a empty string will be returned.
+// In traditional fashion, nIndex starts at 0.
+string SqlGetString(sqlquery sqlQuery, int nIndex);
+
+// Retrieve a vector of the currently stepped query.
+// You can call this after SqlStep() returned TRUE.
+// In case of error, a zero vector will be returned.
+// In traditional fashion, nIndex starts at 0.
+vector SqlGetVector(sqlquery sqlQuery, int nIndex);
+
+// Retrieve a object of the currently stepped query.
+// You can call this after SqlStep() returned TRUE.
+// The object will be spawned into a inventory if it is a item and the receiver
+// has the capability to receive it, otherwise at lSpawnAt.
+// Objects are serialized, NOT stored as a reference!
+// In case of error, INVALID_OBJECT will be returned.
+// In traditional fashion, nIndex starts at 0.
+object SqlGetObject(sqlquery sqlQuery, int nIndex, location lSpawnAt, object oInventory = OBJECT_INVALID);
+
+// Convert sHex, a string containing a hexadecimal object id,
+// into a object reference. Counterpart to ObjectToString().
+object StringToObject(string sHex);
+
+// Sets the current hitpoints of oObject.
+// * You cannot destroy or revive objects or creatures with this function.
+// * For currently dying PCs, you can only set hitpoints in the range of -9 to 0.
+// * All other objects need to be alive and the range is clamped to 1 and max hitpoints.
+// * This is not considered damage (or healing). It circumvents all combat logic, including damage resistance and reduction.
+// * This is not considered a friendly or hostile combat action. It will not affect factions, nor will it trigger script events.
+// * This will not advise player parties in the combat log.
+void SetCurrentHitPoints(object oObject, int nHitPoints);
+
+// Returns the currently executing event (EVENT_SCRIPT_*) or 0 if not determinable.
+// Note: Will return 0 in DelayCommand/AssignCommand. ExecuteScript(Chunk) will inherit their event ID from their parent event.
+int GetCurrentlyRunningEvent();
+
+// Get the integer parameter of eEffect at nIndex.
+// * nIndex bounds: 0 >= nIndex < 8.
+// * Some experimentation will be needed to find the right index for the value you wish to determine.
+// Returns: the value or 0 on error/when not set.
+int GetEffectInteger(effect eEffect, int nIndex);
+
+// Get the float parameter of eEffect at nIndex.
+// * nIndex bounds: 0 >= nIndex < 4.
+// * Some experimentation will be needed to find the right index for the value you wish to determine.
+// Returns: the value or 0.0f on error/when not set.
+float GetEffectFloat(effect eEffect, int nIndex);
+
+// Get the string parameter of eEffect at nIndex.
+// * nIndex bounds: 0 >= nIndex < 6.
+// * Some experimentation will be needed to find the right index for the value you wish to determine.
+// Returns: the value or "" on error/when not set.
+string GetEffectString(effect eEffect, int nIndex);
+
+// Get the object parameter of eEffect at nIndex.
+// * nIndex bounds: 0 >= nIndex < 4.
+// * Some experimentation will be needed to find the right index for the value you wish to determine.
+// Returns: the value or OBJECT_INVALID on error/when not set.
+object GetEffectObject(effect eEffect, int nIndex);
+
+// Get the vector parameter of eEffect at nIndex.
+// * nIndex bounds: 0 >= nIndex < 2.
+// * Some experimentation will be needed to find the right index for the value you wish to determine.
+// Returns: the value or {0.0f, 0.0f, 0.0f} on error/when not set.
+vector GetEffectVector(effect eEffect, int nIndex);
+
+// Check if nBaseItemType fits in oTarget's inventory.
+// Note: Does not check inside any container items possessed by oTarget.
+// * nBaseItemType: a BASE_ITEM_* constant.
+// * oTarget: a valid creature, placeable or item.
+// Returns: TRUE if the baseitem type fits, FALSE if not or on error.
+int GetBaseItemFitsInInventory(int nBaseItemType, object oTarget);
+
+// Get oObject's local cassowary variable reference sVarName
+// * Return value on error: empty solver
+// * NB: cassowary types are references, same as objects.
+//   Unlike scalars such as int and string, solver references share the same data.
+//   Modifications made to one reference are reflected on others.
+cassowary GetLocalCassowary(object oObject, string sVarName);
+
+// Set a reference to the given solver on oObject.
+// * NB: cassowary types are references, same as objects.
+//   Unlike scalars such as int and string, solver references share the same data.
+//   Modifications made to one reference are reflected on others.
+void SetLocalCassowary(object oObject, string sVarName, cassowary cSolver);
+
+// Delete local solver reference.
+// * NB: cassowary types are references, same as objects.
+//   Unlike scalars such as int and string, solver references share the same data.
+//   Modifications made to one reference are reflected on others.
+void DeleteLocalCassowary(object oObject, string sVarName);
+
+// Clear out this solver, removing all state, constraints and suggestions.
+// This is provided as a convenience if you wish to reuse a cassowary variable.
+// It is not necessary to call this for solvers you simply want to let go out of scope.
+void CassowaryReset(cassowary cSolver);
+
+// Add a constraint to the system.
+// * The constraint needs to be a valid comparison equation, one of: >=, ==, <=.
+// * This implementation is a linear constraint solver.
+// * You cannot multiply or divide variables and expressions with each other.
+//   Doing so will result in a error when attempting to add the constraint.
+//   (You can, of course, multiply or divide by constants).
+// * fStrength must be >= CASSOWARY_STRENGTH_WEAK && <= CASSOWARY_STRENGTH_REQUIRED.
+// * Any referenced variables can be retrieved with CassowaryGetValue().
+// * Returns "" on success, or the parser/constraint system error message.
+string CassowaryConstrain(cassowary cSolver, string sConstraint, float fStrength = CASSOWARY_STRENGTH_REQUIRED);
+
+// Suggest a value to the solver.
+// * Edit variables are soft constraints and exist as an optimisation for complex systems.
+//   You can do the same with Constrain("v == 5", CASSOWARY_STRENGTH_xxx); but edit variables
+//   allow you to suggest values without having to rebuild the solver.
+// * fStrength must be >= CASSOWARY_STRENGTH_WEAK && < CASSOWARY_STRENGTH_REQUIRED
+//   Suggested values cannot be required, as suggesting a value must not invalidate the solver.
+void CassowarySuggestValue(cassowary cSolver, string sVarName, float fValue, float fStrength = CASSOWARY_STRENGTH_STRONG);
+
+// Get the value for the given variable, or 0.0 on error.
+float CassowaryGetValue(cassowary cSolver, string sVarName);
+
+// Gets a printable debug state of the given solver, which may help you debug
+// complex systems.
+string CassowaryDebug(cassowary cSolver);
+
+// Overrides a given strref to always return sValue instead of what is in the TLK file.
+// Setting sValue to "" will delete the override
+void SetTlkOverride(int nStrRef, string sValue="");
+
+// Constructs a custom itemproperty given all the parameters explicitly.
+// This function can be used in place of all the other ItemPropertyXxx constructors
+// Use GetItemProperty{Type,SubType,CostTableValue,Param1Value} to see the values for a given itemproperty.
+itemproperty ItemPropertyCustom(int nType, int nSubType=-1, int nCostTableValue=-1, int nParam1Value=-1);
