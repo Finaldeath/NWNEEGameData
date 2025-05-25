@@ -2,7 +2,7 @@
 
     LABEL           STRING_REF  CYCLICAL    DAWN        DAY         DUSK        NIGHT
 
-0   None            ****        ****        ****        ****        ****        ****
+0   (None)          ****        ****        ****        ****        ****        ****
 1   Grass_Clear     ****        1           Skyda_001   Sky_001     Skyd_001    Skyn_001
 2   Grass_Storm	    ****        1           SSkyda_001  SSky_001    SSkyd_001   SSkyn_001
 3   Desert_Clear    ****        1           DSkyda_001  DSky_001    DSkyd_001   DSkyn_001

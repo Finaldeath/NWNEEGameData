@@ -1,7 +1,7 @@
 2DA V2.0
 
        LABEL                     MODEL               ENVMAP
-0      None                      ****                ****
+0      (None)                    ****                ****
 1      Demon                     c_wingsdm           default
 2      Angel                     c_wingsan           ****
 3      Bat                       c_wingbat           ****

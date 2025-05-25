@@ -1,0 +1,24 @@
+2DA V2.0
+
+        Label           Strref   Immunity   ImmunityOnlyIfSpell
+0       Universal       ****     ****       ****
+1       Mind_Spells     8107     1          0
+2       Poison          879      2          0
+3       Disease         1006     3          0
+4       Fear            804      4          0
+5       Sonic           2202     ****       ****
+6       Acid            1027     ****       ****
+7       Fire            1028     ****       ****
+8       Electricity     8114     ****       ****
+9       Positive        5159     ****       ****
+10      Negative        5158     ****       ****
+11      Death           4722     ****       ****
+12      Cold            1029     ****       ****
+13      Divine          5155     ****       ****
+14      Trap            5563     5          0
+15      Spell           2295     ****       ****
+16      Good            265      ****       ****
+17      Evil            266      ****       ****
+18      Law             4943     ****       ****
+19      Chaos           4944     ****       ****
+20      Paralysis       5161     6          ****
