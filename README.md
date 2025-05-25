@@ -3,4 +3,4 @@
  
  No licence - these are from the game and only usable in NWN:EE here as a searchable reference for scripters.
  
- Current version: 8193.23
+ Current version: 8193.37
